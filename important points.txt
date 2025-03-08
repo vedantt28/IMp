@@ -1,0 +1,179 @@
+Object oriented design is a technique that focuses design on data (i.e., Objects) and on the interfaces to it.
+The size of data types is always same irrespective of the system architecture. That is an int in Java is always 32 bits unlike in C/C++ where the size may be 16-bit or 32-bit depending on the compiler and machine
+
+Multithreading is the ability for one program to do more than one task at once
+----------------------------------------------------------------------------------------------------------------------------------
+Features of JAVA:
+Simple
+Object oriented
+Architectural Neutral
+Portable type
+Distributed
+Secure
+Smaller code
+Multithreaded
+Interpreted
+High performance :
+Applet programming: is one of the important features which has attracted the 
+users of the Internet. Applets are Java programs that are typically loaded from 
+the Internet by a browse
+----------------------------------------------------------------------------------------------------------------------------------
+The JVM performs following operation:
+• Loads code
+• Verifies code
+• Executes code
+• Provides runtime environment
+
+The JVM provides definitions for the:
+• Memory area
+• Class file format
+• Register set
+• Garbage-collected heap
+• Fatal error reporting etc
+------------------------------------------------------------------------------------------------------------------------------------
+1. JDK (Java Development Kit) is a Kit that provides the environment to develop and execute(run) the Java program. JDK is a kit(or package) that includes two 
+things Development Tools(to provide an environment to develop your java programs) JRE (to execute your java program).
+
+2. JRE (Java Runtime Environment) is an installation package that provides an environment to only run(not develop) the java program(or application)onto your 
+machine. JRE is only used by those who only want to run Java programs that are end-users of your system.
+
+3. JVM (Java Virtual Machine) is a very important part of both JDK and JRE because it is contained or inbuilt in both. Whatever Java program you run using JRE or JDK 
+goes into JVM and JVM is responsible for executing the java program line by line, hence it is also known as an interpreter
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Data types supported by switch statements include the following:
+• int and Integer
+• byte and Byte
+• short and Short
+• char and Character
+• String
+• enum values
+--------------------------------------------------------------------------------------------------------------------------------------------
+The array of Objects the name itself suggests that it stores an array of objects. 
+• Unlike the traditional array stores values like String, integer, Boolean, etc an Array 
+of Objects stores objects that mean objects are stored as elements of an array. 
+• Note that when we say Array of Objects it is not the object itself that is stored in 
+the array but the reference of the object.
+--------------------------------------------------------------------------------------------------------------------------------------------
+The Arrays class in java.util package is a part of the Java Collection Framework. 
+• This class provides static methods to dynamically create and access Java arrays. 
+• It consists of only static methods and the methods of Object class. 
+• The methods of this class can be used by the class name itself
+----------------------------------------------------------------------------------------------------------------------------------------------
+Classpath is an environment variable that tells the Java Virtual Machine where to 
+look for user-defined classes and packages in Java programs.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+In procedural programming, there is no concept of data hiding and inheritance :-->Examples: C, FORTRAN, Pascal, Basic, etc.
+
+In object-oriented programming, the concept of data hiding, and inheritance is used.-->Examples: C++, Java, Python, C#, etc
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+An object is a software construct that encapsulates data, along with the ability to use or modify that data, into a software entity. 
+
+An object is a self-contained entity which has its own private collection of 
+properties (i.e., data) and methods (i.e., operations) that encapsulate functionality 
+into a reusable and dynamically loaded structure
+---------------------------------------------------------------------------------------------------------------------------------------------------
+A class is a blueprint or prototype that defines the variables and the methods 
+common to all objects of a certain kind. 
+• blueprint: A class can't do anything on its own. 
+• defines: A class provides something that can be used later. 
+• objects: A class can only be used, if it had been "brought to life" by instantiating it
+----------------------------------------------------------------------------------------------------------------------------------------------------
+A class is a blueprint or prototype that defines the variables and the methods 
+common to all objects of a certain kind. 
+
+blueprint: A class can't do anything on its own. 
+defines: A class provides something that can be used later. 
+objects: A class can only be used, if it had been "brought to life" by instantiating it
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+An Object-Oriented Program consists of a group of cooperating objects, 
+exchanging messages, for the purpose of achieving a common objective.
+• Benefits of OOPS:
+• Real-world programming
+• Reusability of code
+• Modularity of code 
+• Resilience to change
+• Information hiding
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Pillars of OOPS
+Encapsulation Abstraction Inheritance Polymorphism
+
+Encapsulation is the ability of an object to place a boundary around its properties 
+(i.e., data) and methods (i.e., operations).
+
+Encapsulation hides the irrelevant details of an 
+object and Abstraction makes only the relevant 
+details of an object visible.
+
+“An Abstraction denotes the essential characteristics of an object that 
+distinguishes it from all other kinds of objects and thus provides crisply defined 
+conceptual boundaries, relative to the perspective of the viewer.”
+
+Inheritance is the capability of a class to use the properties and methods of 
+another class while adding its own functionality.
+
+----------------------------------------------------------------------------------------------------
+1. Single inheritance : Only Two classes are involved.
+2. Hierarchical Inheritance : N number of classes involved in a Tree like structure
+3. Multilevel Inheritance : Multiple levels of Single inheritance
+• Multiple inheritance -> Not Supported 
+--------------------------------------------------------------------------------------------------
+Subclass is derived from only one superclass. 
+
+Inherits the properties of another subclass.
+------------------------------------------------------------------------------------------------
+Syntax of main method:
+Main Method For Java Application
+: public specifies, method can be accessed from any object in a Java program. 
+: static keyword associates the method with its class.
+: void is the return type of the method.
+: main is the name of the method and accepts a single argument in the 
+ form of a String array, which accepts command line arguments
+-----------------------------------------------------------------------------------------------------------
+“this” is a reference to the current object. 
+• this is used to 
+• refer to the current object when it must be passed as a parameter to a 
+method.
+otherobj1.anymethod(this)
+-----------------------------------------------------------------------------------------------------------------
+
+=======================================================================================================================
+Modifiers
+1.final
+2.abstract
+3.transient strictfp
+4.synchronized
+5.static
+Determines how data members and methods are used in other classes.
+
+static keyword
+1.Used to define data members and methods that belongs to a class and 
+not to any specific instance of a class.
+2.Methods and data members can be called without instantiating the class.
+3.A static member exists when no objects of that class exist.
+---------------------------------------------------------------------------------------------------------------------------
+
+ final keyword
+• A final method cannot be overridden in the subclass.
+• A class declared as final cannot be inherited .
+•  A final data members cannot be modified.
+
+---------------------------------------------------------------------------------------------------------------------------
+final : In Java, final is a modifier which is used for class, method and variable also. 
+When a variable is declared with final keyword, it’s value can’t be modified, 
+essentially, a constant. 
+• Immutability : In simple terms, immutability means unchanging over time or 
+unable to be changed. 
+• In Java, String objects are immutable means we can't change anything to the 
+existing String objects
+-------------------------------------------------------------------------------------------------------------------------------
+final prevents a variable from changing or a method from being overridden.
+• static makes a variable shared at the class level and uses the class name to refer 
+to a method.
+• static and final are allowed to be added on the class level too.
+• Using final on a class means that it cannot be subclassed. 
+• As with methods, a class cannot be both abstract and final. In the Java core 
+classes, String is final.
+----------------------------------------------------------------------------------------------------------------------------------
+
