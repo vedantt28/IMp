@@ -1,0 +1,1248 @@
+1) User-defined exceptions in Java are typically unchecked exceptions.
+A. True
+B. False
+
+Answer: B. False
+
+Explanation:
+User-defined exceptions in Java are typically checked exceptions when they extend the Exception class. However, if they extend RuntimeException, they become unchecked exceptions.
+
+2) Given:
+java
+Copy
+Edit
+interface Jumper { public void jump(); }
+class Animal {}
+class Dog extends Animal { Tail tail; }
+class Beagle extends Dog implements Jumper { public void jump() {} }
+class Cat implements Jumper { public void jump() {} }
+Which three statements are true? (Choose three.)
+
+A. Cat is-a Animal
+B. Cat is-a Jumper
+C. Dog is-a Animal
+D. Dog is-a Jumper
+E. Cat has-a Animal
+F. Beagle has-a Tail
+G. Beagle has-a Jumper
+
+Answer: B, C, F
+
+Explanation:
+
+Cat implements Jumper, so Cat is-a Jumper (B).
+Dog extends Animal, so Dog is-a Animal (C).
+Beagle extends Dog, and Dog has a Tail, so Beagle has-a Tail (F).
+Cat is not an Animal because it does not extend Animal.
+Dog does not implement Jumper, so Dog is-a Jumper is false.
+Beagle implements Jumper, but it does not have-a Jumper, so G is incorrect.
+
+3) What will be the output of the following Java program?
+
+public class Program1 
+{
+    public static void main(String[] args) 
+    {
+        Runnable r1 = new Runnable()
+        {
+            @Override
+            public void run() {
+                System.out.println("This is a run method");
+            }
+        };
+        Thread t1 = new Thread(r1);
+        t1.start();
+
+        Runnable r2 = () -> {
+            System.out.println("My name is Sandip");
+        };
+        Thread t2 = new Thread(r2);
+        t2.start();
+    }
+}
+A. Compilation error
+B. Runtime error
+C. This is a run method My name is Sandip
+D. My name is Sandip This is a run method
+
+Answer: C or D (Output order is not guaranteed)
+
+Explanation:
+
+The program creates two threads, each printing a message.
+Since thread execution is non-deterministic, either output is possible.
+The lambda expression r2 is a valid functional interface implementation.
+4) What is the range of byte in Java?
+A. (-128 to 255)
+B. (-128 to 127)
+C. (0 to 255)
+D. (-256 to 255)
+
+Answer: B. (-128 to 127)
+
+Explanation:
+byte is an 8-bit signed data type in Java, so it can store values from -128 to 127.
+
+5) User-defined exceptions that extend Exception class are?
+A. Checked exceptions
+B. Unchecked exceptions
+C. Either checked or unchecked
+D. Runtime exceptions only
+
+Answer: A. Checked exceptions
+
+Explanation:
+
+If a user-defined exception extends Exception, it becomes a checked exception.
+If it extends RuntimeException, it becomes an unchecked exception.
+6) Which of the following is not a checked exception in Java?
+A. IOException
+B. SQLException
+C. ArithmeticException
+D. FileNotFoundException
+
+Answer: C. ArithmeticException
+
+Explanation:
+
+Checked exceptions are those that must be handled explicitly (e.g., IOException, SQLException).
+ArithmeticException is an unchecked exception because it extends RuntimeException.
+7) What is the time complexity of Binary Search?
+A. O(n)
+B. O(n log n)
+C. O(log n)
+D. O(1)
+
+Answer: C. O(log n)
+
+Explanation:
+Binary search repeatedly divides the search space in half, making it logarithmic in time complexity.
+
+8) Which of the following keywords is not used for exception handling in Java?
+A. try
+B. catch
+C. Access
+D. finally
+
+Answer: C. Access
+
+Explanation:
+Java uses try, catch, finally, and throw for exception handling. Access is not related to exception handling.
+
+9) What will be the output for the printer queue scenario?
+A. Mathews, Suzanne, John Queue
+B. John Queue, Mathews, Suzanne
+C. Suzanne, Mathews, John Queue
+D. Compilation error
+
+Answer: A. Mathews, Suzanne, John Queue
+
+Explanation:
+The question refers to queue-based processing where FIFO (First-In-First-Out) order is maintained.
+
+10) What does if(f is instance of p) return in Java?
+A. f-p
+B. w-f
+C. Compilation error
+D. True
+
+Answer: A. f-p, w-f
+
+Explanation:
+The instanceof operator checks whether an object is an instance of a specific class or subclass.
+
+11) Where does the local Maven repository store dependencies?
+A. /usr/local/maven/repo
+B. ${Local.home}/m2/repository
+C. C:/maven/repo
+D. ./m2/repository
+
+Answer: B. ${Local.home}/m2/repository
+
+Explanation:
+Maven stores dependencies in the default local repository location ${user.home}/.m2/repository.
+
+12) Which sorting algorithm divides the list into two sublists?
+A. Bubble Sort
+B. Selection Sort
+C. Merge Sort
+D. Quick Sort
+
+Answer: B. Selection Sort
+
+Explanation:
+Selection sort works by maintaining two sublists: a sorted and an unsorted portion.
+
+13) Which concept hides some details and only exposes essential features?
+A. Encapsulation
+B. Abstraction
+C. Polymorphism
+D. Inheritance
+
+Answer: B. Abstraction
+
+Explanation:
+Abstraction focuses on hiding implementation details while showing only essential parts.
+
+11) Which access modifier is used when you do not want a class to be inherited, and which keyword is used to create an interface?
+A. private, implements
+B. protected, interface
+C. final, interface
+D. abstract, class
+
+Answer: C. final, interface
+
+Explanation:
+
+The final keyword prevents a class from being inherited.
+The interface keyword is used to define an interface in Java.
+12) Which of the following methods is used for instantiating objects of a class?
+A. newInstance()
+B. constructor
+C. static method
+D. class.forName()
+
+Answer: B. constructor
+
+Explanation:
+A constructor is a special method in Java used to initialize objects when they are instantiated.
+
+13) Which of the following methods can be accessed using method reference?
+A. Static methods
+B. Instance methods
+C. Both A and B
+D. None of the above
+
+Answer: C. Both A and B
+
+Explanation:
+Method references can be used to refer to both static and instance methods of a class.
+
+14) Which of the following is relevant to the transient keyword?
+A. Serialization
+B. Inheritance
+C. Multithreading
+D. Polymorphism
+
+Answer: A. Serialization
+
+Explanation:
+The transient keyword prevents an instance variable from being serialized.
+
+15) By which of the following can we achieve synchronization?
+A. Synchronized methods
+B. Synchronized block
+C. Both A and B
+D. None of the above
+
+Answer: C. Both A and B
+
+Explanation:
+
+Synchronized methods ensure that only one thread can execute a method at a time.
+Synchronized blocks provide fine-grained control by synchronizing only a specific part of the method.
+16) What does Thread.isAlive() return when a thread has finished execution?
+A. true
+B. false
+C. Throws an exception
+D. None of the above
+
+Answer: B. false
+
+Explanation:
+isAlive() returns false once the thread has completed execution.
+
+17) In a banking system with multiple users accessing the same account, which concept should be used to prevent inconsistencies?
+A. Thread synchronization
+B. Polymorphism
+C. Abstraction
+D. Recursion
+
+Answer: A. Thread synchronization
+
+Explanation:
+Thread synchronization ensures that multiple threads accessing the same resource do not create inconsistencies.
+
+18) In which line does the following code have an error when counting the number of elements in a LinkedList?
+java
+Copy
+Edit
+int count = 1;
+A. Line 1
+B. Line 2
+C. Line 3
+D. Line 4
+
+Answer: A. Line 1
+
+Explanation:
+The count should typically be initialized as 0, not 1, when counting elements in a LinkedList.
+
+19) What will be the output of the following Math function operation?
+A. 42, 3, 12
+B. 41, 2, 10
+C. 40, 4, 14
+D. None of the above
+
+Answer: A. 42, 3, 12
+
+Explanation:
+This is based on common math functions like Math.floor(), Math.ceil(), or Math.sqrt() applied to certain inputs.
+
+20) What happens if a parent class exception is caught before a child class exception?
+A. Compilation error
+B. Runtime exception
+C. The child exception is never caught
+D. The program works fine
+
+Answer: C. The child exception is never caught
+
+Explanation:
+If the parent exception is caught before the child exception, the child exception never gets executed, leading to unreachable code.
+
+21) If a file contains the text "Hello world", what will be the first character read?
+A. H
+B. e
+C. w
+D. o
+
+Answer: A. H
+
+Explanation:
+Files are read character by character, and "H" is the first character of "Hello world".
+
+22) Which interface does not allow duplicate values and maintains natural order?
+A. List
+B. Set
+C. Map
+D. Queue
+
+Answer: B. Set
+
+Explanation:
+The Set interface does not allow duplicate values and ensures natural ordering if using TreeSet.
+
+23) Which function is used to add elements to a Map in Java?
+A. add()
+B. insert()
+C. put()
+D. append()
+
+Answer: C. put()
+
+Explanation:
+The put() method is used to insert key-value pairs into a Map.
+
+24) Which elements are used to identify a dependent artifact in a pom.xml file?
+A. version, artifactid
+B. groupid, artifactid
+C. version, groupid, artifactid
+D. dependency, version
+
+Answer: C. version, groupid, artifactid
+
+Explanation:
+A dependency in a Maven pom.xml file is identified by groupId, artifactId, and version.
+
+25) What is true about mvn clean in Maven?
+A. It removes Maven from the system
+B. It cleans up artifacts created by prior builds
+C. It compiles the project
+D. It deletes the pom.xml file
+
+Answer: B. It cleans up artifacts created by prior builds
+
+Explanation:
+The mvn clean command deletes temporary files and artifacts from previous builds, ensuring a fresh build environment.
+
+26) Which of the following scope is used only when the dependency is of pom type?
+A. Compile
+B. Runtime
+C. Import
+D. Provided
+
+Answer: C. Import
+
+Explanation:
+The import scope is used in Maven when a dependency of type pom needs to be imported as a dependency management section.
+
+27) Which Maven plugin uses the information in the pom.xml to determine the proper location for the artifact within the local repository?
+A. maven-compile-plugin
+B. maven-deploy-plugin
+C. maven-install-plugin
+D. maven-clean-plugin
+
+Answer: C. maven-install-plugin
+
+Explanation:
+The maven-install-plugin installs the built artifact into the local repository, allowing other projects to use it.
+
+28) What happens if the JVM is unable to allocate memory to create an object?
+A. The object is created with default values
+B. The JVM will ignore the operation
+C. JVM will throw an error and abort the program
+D. The garbage collector will free up space and retry
+
+Answer: C. JVM will throw an error and abort the program
+
+Explanation:
+If the JVM runs out of memory, it throws an OutOfMemoryError, and the program terminates as this situation cannot be handled by normal programming techniques.
+
+29) What is an example of Boxing in Java?
+A. int x = 10;
+B. Integer x = Integer.valueOf(10);
+C. Integer x = new Integer(10);
+D. x = 10 + 5;
+
+Answer: B. Integer x = Integer.valueOf(10);
+
+Explanation:
+Boxing refers to converting a primitive type into a corresponding wrapper object (int → Integer). Integer.valueOf(10) is the correct example.
+
+30) What happens when executing List.add("paper")?
+A. "paper" is added to the list
+B. A compilation error occurs
+C. A runtime exception is thrown
+D. None of the above
+
+Answer: C. A runtime exception is thrown
+
+Explanation:
+If the list is immutable or has a size constraint, calling add() can result in a RuntimeException.
+
+31) What exception is thrown in the following case?
+(Vanilla, Chocolate - Array processing question)
+
+A. NullPointerException
+B. IndexOutOfBoundsException
+C. ArrayStoreException
+D. ClassCastException
+
+Answer: B. ArrayIndexOutOfBoundsException
+
+Explanation:
+If an array is accessed beyond its valid index range, an ArrayIndexOutOfBoundsException occurs.
+
+32) Regarding Interface Jumper, which of the following are true?
+A. Cat is a Jumper
+B. Dog is an Animal
+C. Beagle has a Tail
+D. Dog is a Jumper
+
+Answer: A, B, C
+
+Explanation:
+
+Cat implements Jumper, so it is-a Jumper.
+Dog extends Animal, so it is-a Animal.
+Beagle extends Dog and has a Tail reference, so it has-a Tail.
+33) What happens when executing List.set(0, "Data Structures")?
+A. "Data Structures" replaces the existing element at index 0
+B. Compilation error: Cannot convert from Object to boolean
+C. Throws NullPointerException
+D. Throws IndexOutOfBoundsException
+
+Answer: B. Compilation error: Cannot convert from Object to boolean
+
+Explanation:
+This error occurs if the list expects a boolean return type or if the method signature is incorrect.
+
+34) What is the correct signature for compareTo in a class implementing Comparable?
+java
+Copy
+Edit
+public class Score implements Comparable() {  
+    public int compareTo(Score other) { /more code here/ }  
+}
+A. public void compareTo(Score other)
+B. public boolean compareTo(Score other)
+C. public int compareTo(Score other)
+D. public int compareTo(Object other)
+
+Answer: C. public int compareTo(Score other)
+
+Explanation:
+compareTo() must return an int value (0, positive, or negative) to indicate ordering.
+
+35) What is the correct way to get the current date in Java?
+A. LocalDate currentdate = new LocalDate();
+B. LocalDate currentdate = new LocalDate.now();
+C. LocalDate currentdate = LocalDate.now();
+D. Date currentdate = new Date();
+
+Answer: C. LocalDate currentdate = LocalDate.now();
+
+Explanation:
+LocalDate.now() returns the current date without needing a new keyword.
+
+36) What will be the output of the following code?
+java
+Copy
+Edit
+Thread t = new Thread();
+System.out.println(t.isAlive());
+A. true
+B. false
+C. Compilation error
+D. Runtime Exception
+
+Answer: B. false
+
+Explanation:
+Since t.start() was not called, isAlive() returns false.
+
+37) Which of the following methods are eligible for interfaces?
+A. boolean getAmount(boolean[] args)
+B. public static void main(String[]) args
+C. public void main(String[] args)
+D. int a()
+E. void a()
+
+Answer: A, D, E
+
+Explanation:
+
+Valid:
+boolean getAmount(boolean[] args): Allowed as it follows standard interface rules.
+int a(): Valid as it declares a method without a body.
+void a(): Valid, following normal interface rules.
+Invalid:
+public static void main(String[] args): Static methods cannot be abstract.
+public void main(String[] args): This is not a recognized method for interface
+
+
+38) What will be the output of the following code?
+java
+Copy
+Edit
+public static class Threads extends Thread {
+    public static void main(String[] args) {
+        Thread t = Thread.currentThread();
+        System.out.println(t);
+    }
+}
+A. Thread[main, 5, main]
+B. Compilation Error
+C. NullPointerException
+D. Thread[main, 1, main]
+
+Answer: A. Thread[main, 5, main]
+
+Explanation:
+
+Thread.currentThread() returns the currently executing thread (main thread).
+Default priority of the main thread is 5.
+Default group is main.
+The output is formatted as Thread[name, priority, group].
+39) Which method is required for loading a database driver in JDBC?
+A. DriverManager.loadDriver()
+B. Class.forName()
+C. registerDriver()
+D. Both B & C
+
+Answer: D. Both Class.forName() and registerDriver()
+
+Explanation:
+
+Class.forName("com.mysql.cj.jdbc.Driver") dynamically loads the database driver.
+DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver()) manually registers the driver.
+40) Which of the following is used to limit the number of rows returned in JDBC?
+A. setFetchSize(int i)
+B. setMaxRows(int i)
+C. setRowLimit(int i)
+D. setRowSize(int i)
+
+Answer: B. setMaxRows(int i)
+
+Explanation:
+
+setMaxRows(int i) limits the number of rows returned by a ResultSet.
+41) What is the return type of the hashCode() method in Java?
+A. String
+B. int
+C. long
+D. Object
+
+Answer: B. int
+
+Explanation:
+
+hashCode() returns a unique integer identifier for an object.
+42) What are Serializable and Cloneable in Java?
+A. Abstract classes
+B. Functional interfaces
+C. Marker interfaces
+D. Exception classes
+
+Answer: C. Marker interfaces
+
+Explanation:
+
+Marker interfaces are empty interfaces that provide metadata to the compiler (e.g., Serializable, Cloneable).
+43) If a class has two or more base classes and one subclass, what is this called?
+A. Hierarchical Inheritance
+B. Single Inheritance
+C. Multiple Inheritance
+D. Hybrid Inheritance
+
+Answer: C. Multiple Inheritance
+
+Explanation:
+
+Multiple inheritance means a class inherits from more than one base class.
+Java does not support multiple inheritance with classes, but it supports it using interfaces.
+44) What are in, out, and err in java.lang?
+A. Variables
+B. Classes
+C. Static Fields
+D. Interfaces
+
+Answer: C. Static Fields
+
+Explanation:
+
+System.in → Standard input stream (keyboard).
+System.out → Standard output stream (console).
+System.err → Standard error stream.
+45) What will be the output of the following code?
+java
+Copy
+Edit
+class X1 {
+    int x = 9;
+    public static void main(String[] args) {
+        int x = 10;
+        X1 ob = new X1();
+        System.out.println(ob.x);
+    }
+}
+A. 9
+B. 10
+C. Compilation Error
+D. NullPointerException
+
+Answer: A. 9
+
+Explanation:
+
+ob.x accesses the instance variable x, which is 9.
+The local x = 10 inside main does not override the instance variable.
+46) What is an immutable class in Java?
+A. A class with all variables declared as final
+B. A class that cannot be extended
+C. A class whose state cannot be modified after creation
+D. A class that has static methods only
+
+Answer: C. A class whose state cannot be modified after creation
+
+Explanation:
+
+Immutable classes (e.g., String, Integer) cannot be modified after creation.
+47) What access modifiers can be used to access variables from other packages?
+A. private and protected
+B. protected and public
+C. private and default
+D. default and protected
+
+Answer: B. protected and public
+
+Explanation:
+
+public → Accessible from anywhere.
+protected → Accessible in subclasses even if they are in different packages.
+48) Can constructors be overloaded in Java?
+A. Yes
+B. No
+
+Answer: A. Yes
+
+Explanation:
+
+Constructor overloading is possible when a class has multiple constructors with different parameters.
+49) If two threads have the same priority, which one will execute first?
+A. The first thread to be created
+B. The last thread to be created
+C. The OS will decide
+D. It depends on the JVM
+
+Answer: C. The OS will decide
+
+Explanation:
+
+Thread scheduling depends on OS and JVM.
+Even if two threads have the same priority, their execution order is not guaranteed.
+50) What is the difference between ArrayList and Vector?
+A. ArrayList is thread-safe, Vector is not
+B. Vector is synchronized, ArrayList is not
+C. Both are synchronized
+D. Vector is faster than ArrayList
+
+Answer: B. Vector is synchronized, ArrayList is not
+
+Explanation:
+
+ArrayList is not synchronized, making it faster.
+Vector is synchronized, making it thread-safe but slower.
+
+51) Is StringBuffer thread-safe in Java?
+A. Yes
+B. No
+
+Answer: A. Yes
+
+Explanation:
+
+StringBuffer is synchronized, making it thread-safe.
+StringBuilder is not thread-safe but faster.
+
+52) What does collectionObject.stream() do?
+A. Converts a collection into a sequential stream
+B. Deletes elements in the collection
+C. Converts a collection into a string
+D. None of the above
+
+Answer: A. Converts a collection into a sequential stream
+
+Explanation:
+
+stream() method is used to process elements in a collection using the Stream API.
+
+===============================================================================================================================
+1) How do you link a local Git repository to a remote repository?
+a) git connect remote <remote_repo_URL>
+b) git add remote <remote_repo_URL>
+c) git remote add origin <remote_repo_URL> ✅
+d) git link remote <remote_repo_URL>
+
+Explanation: The correct command to link a local repository to a remote repository is git remote add origin <remote_repo_URL>. This command establishes a connection between the local Git repository and the remote repository hosted on platforms like GitHub, GitLab, or Bitbucket.
+
+2) Which programming language does not support Object-Oriented Programming (OOP) concepts?
+a) C++
+b) Java
+c) Python
+d) C ✅
+
+Explanation: C is a procedural programming language and does not support Object-Oriented Programming (OOP) concepts like classes and objects. In contrast, C++, Java, and Python all support OOP principles such as encapsulation, inheritance, and polymorphism.
+
+3) Which data type has the largest storage size?
+a) CHAR
+b) VARCHAR
+c) TEXT ✅
+d) CHAR and VARCHAR
+
+Explanation: The TEXT data type can store the largest amount of data, up to 65,535 bytes. CHAR and VARCHAR have smaller limits, depending on their defined length. TEXT is used for large text-based data storage in databases.
+
+4) What is the correct order of Normalization?
+a) 1NF, 3NF, 2NF, BCNF, 4NF, 5NF
+b) 1NF, 2NF, 3NF, BCNF, 4NF, 5NF ✅
+c) 1NF, BCNF, 2NF, 3NF, 5NF, 4NF
+d) 1NF, 2NF, BCNF, 3NF, 4NF, 5NF
+
+Explanation: The correct sequence of normalization is 1NF → 2NF → 3NF → BCNF → 4NF → 5NF. Each step eliminates different types of redundancies and anomalies to improve database structure.
+
+5) In which SDLC phase are both frontend and backend developers actively involved?
+a) Requirement Analysis
+b) Development Phase ✅
+c) Deployment Phase
+d) Testing Phase
+
+Explanation: Frontend and backend developers are mainly involved in the Development Phase of the Software Development Life Cycle (SDLC). In this phase, developers write code to build both the user interface (frontend) and server-side logic (backend).
+
+6) What are the types of Prototype Models?
+a) Throwaway/Rapid Prototypes
+b) Evolutionary Prototypes
+c) Incremental Prototypes
+d) Extreme Prototyping
+e) All of the above ✅
+
+Explanation: There are four main types of prototype models:
+
+Throwaway/Rapid Prototypes – Quickly created to test ideas and then discarded.
+Evolutionary Prototypes – Continuously improved over time.
+Incremental Prototypes – Built in small parts and refined.
+Extreme Prototyping – Commonly used in web development with three phases (wireframes, coding, testing).
+7) In flowcharts, what symbol is used to indicate that the same process is connected or referenced on the same page?
+a) Off-Page Connector
+b) On-Page Connector ✅
+c) Terminal Symbol
+d) Decision Symbol
+
+Explanation: On-Page Connectors are used in flowcharts to indicate continuity within the same page. They help avoid clutter by linking different parts of a diagram.
+
+8) What is the core purpose of database normalization?
+a) To increase redundancy
+b) To store unstructured data
+c) To reduce redundancy and improve data integrity ✅
+d) To increase query complexity
+
+Explanation: Normalization helps in minimizing redundancy, reducing update anomalies, and improving data integrity by organizing the data efficiently. It ensures that data is stored logically and consistently.
+
+9) What is an advantage of proper planning in the Software Development Life Cycle (SDLC)?
+a) Clarity of Objectives and Scope
+b) Risk Management
+c) Resource Allocation and Management
+d) All of the above ✅
+
+Explanation: Proper planning in SDLC ensures clear objectives, risk management, resource management, milestone definition, quality assurance, stakeholder communication, and cost control. This helps in a smooth and efficient development process.
+
+10) Which is NOT a best practice of writing pseudocode?
+a) Using simple, clear, and concise language
+b) Writing in a structured and sequential order
+c) Using actual programming language syntax ✅
+d) Keeping it independent of any specific programming language
+
+Explanation: Pseudocode should be language-independent and should not use actual programming syntax. It is meant to describe the logic of a program in a way that is easy to understand without being tied to a specific language.
+
+11) What is the structure of a computer program?
+a) Sequence
+b) Selection
+c) Iteration
+d) All of the above ✅
+
+Explanation:
+A computer program consists of three fundamental structures:
+
+Sequence: Ordered statements executed in order.
+Selection: A condition-based execution (e.g., if-else statements).
+Iteration: Repeated execution of code using loops (e.g., for, while).
+12) What is the relationship of deptno in a database?
+a) Primary Key
+b) Foreign Key ✅
+c) Composite Key
+d) Candidate Key
+
+Explanation:
+A Foreign Key is a field that establishes a relationship between two tables. deptno (Department Number) in an employee table typically refers to a Primary Key in the department table, creating a foreign key relationship.
+
+13) To unstage a file in Git while preserving changes, which command is used?
+a) git revert <file>
+b) git reset HEAD <file> ✅
+c) git restore <file>
+d) git checkout <file>
+
+Explanation:
+The command git reset HEAD <file> removes a file from the staging area but keeps the changes in the working directory, allowing modifications to be committed later if needed.
+
+14) What is an entity in a database?
+a) A collection of tables
+b) A real-world object, person, or concept with stored data ✅
+c) A database constraint
+d) A function in SQL
+
+Explanation:
+An entity is a real-world object (like a person, place, or event) that is stored as a record in a database. Each entity has attributes (e.g., an "Employee" entity has attributes like name, ID, and department).
+
+15) Which Git command creates an empty repository in the specified directory?
+a) git create <repo_name>
+b) git init ✅
+c) git new <repo_name>
+d) git repository create
+
+Explanation:
+The git init command initializes a new empty Git repository. It creates a .git directory containing all metadata for version control.
+
+16) What is the .git directory in a Git repository?
+a) A temporary storage area for commits
+b) A folder that stores metadata and object database for a project ✅
+c) A directory where user files are stored
+d) A staging area for uncommitted changes
+
+Explanation:
+The .git directory is a hidden folder that contains all essential Git data, including commit history, branches, remote information, and configuration settings.
+
+17) What are the advantages of Object-Oriented Programming (OOP)?
+a) Reusability
+b) Easy to debug
+c) Easy to test
+d) All of the above ✅
+
+Explanation:
+OOP provides benefits such as:
+
+Reusability (via inheritance)
+Easy debugging (code is modular and structured)
+Easy testing (each class/module can be tested separately)
+18) What does %jim% represent in SQL?
+a) A wildcard to match any records that contain "jim" ✅
+b) A regular expression pattern
+c) A mathematical operator
+d) A function in SQL
+
+Explanation:
+%jim% is a wildcard pattern used in SQL LIKE queries to match any string containing "jim". Example:
+
+sql
+Copy
+Edit
+SELECT * FROM employees WHERE name LIKE '%jim%';
+This will return all records where the name contains "jim".
+
+19) What does NVL do in SQL?
+a) Returns the total count of NULL values
+b) Replaces NULL values with a specified default value ✅
+c) Deletes NULL values from a table
+d) Finds the first non-null value in a column
+
+Explanation:
+The NVL function replaces NULL values with a specified default value. Example:
+
+sql
+Copy
+Edit
+SELECT NVL(salary, 0) FROM employees;
+This replaces NULL salaries with 0.
+
+20) Which SQL query correctly uses SELECT, WHERE, ORDER BY, and aliasing?
+sql
+Copy
+Edit
+SELECT customer_id AS id,
+       CONCAT(first_name, ' ', last_name) AS full_name,
+       email, order_date, total_amount 
+FROM orders 
+WHERE order_status = 'completed'
+ORDER BY order_date DESC;
+✅
+
+Explanation:
+This query:
+
+Uses AS for aliasing (customer_id AS id, CONCAT(...) AS full_name)
+Filters data using WHERE (order_status = 'completed')
+Orders results with ORDER BY (order_date DESC for latest first)
+
+
+
+21) What is the relationship between a University and all the Colleges in the region?
+a) 1:1
+b) 1:M ✅
+c) M:M
+d) None
+
+Explanation:
+A 1:M (One-to-Many) relationship means one entity (University) is associated with many entities (Colleges). A university oversees multiple colleges, but each college is linked to only one university.
+
+22) What does Adaptive Maintenance refer to in SDLC?
+a) Fixing bugs in the software
+b) Enhancing performance based on user feedback
+c) Modifying software to keep it usable in a changing environment ✅
+d) Completely redesigning the software
+
+Explanation:
+Adaptive Maintenance modifies software to adapt to new business requirements, laws, or technological advancements, ensuring continued usability.
+
+23) What is a Prototyping Model in software development?
+a) Creating a final version of the software
+b) Developing an incomplete version to visualize and refine requirements ✅
+c) Directly coding without planning
+d) A replacement for the Waterfall model
+
+Explanation:
+The Prototyping Model helps visualize the system, refine functionalities, and gather user feedback early before the final system is built.
+
+24) What MySQL command displays all available character sets?
+a) SHOW COLLATION;
+b) SHOW CHARSET;
+c) SHOW CHARACTER SET; ✅
+d) SHOW ENCODING;
+
+Explanation:
+To view all character sets supported by MySQL, use:
+
+sql
+Copy
+Edit
+SHOW CHARACTER SET;
+This command lists character sets along with their default collations.
+
+25) What are illegal queries associated with the GROUP BY function?
+a) Using non-aggregated columns in SELECT
+b) Using ambiguous columns
+c) HAVING without GROUP BY
+d) All of the above ✅
+
+Explanation:
+Illegal GROUP BY queries include:
+
+Selecting non-aggregated columns without grouping.
+Using ambiguous columns that belong to multiple tables.
+Writing HAVING without GROUP BY.
+Inconsistent data types in the grouping.
+26) What is staging in Git?
+a) A permanent storage for changes
+b) A way to prepare and review changes before committing ✅
+c) An automatic commit process
+d) A method to delete untracked files
+
+Explanation:
+Staging allows selective inclusion of changes before committing. The command:
+
+bash
+Copy
+Edit
+git add <file>
+moves files to the staging area, where they can be reviewed before committing.
+
+27) What is Denormalization in databases?
+a) The process of removing NULL values
+b) The process of reducing redundancy in a database
+c) The process of adding redundant data to improve performance ✅
+d) A technique used in indexing
+
+Explanation:
+Denormalization adds redundancy to improve read performance, reducing the need for complex joins. It is used in high-performance database systems.
+
+28) What is the role of a Database Administrator (DBA)?
+a) Designs user interfaces
+b) Manages database security, performance, and backups ✅
+c) Develops software applications
+d) Writes SQL queries only
+
+Explanation:
+A DBA ensures database security, manages backups, performance tuning, and user access control.
+
+29) What is Perfective Maintenance in SDLC?
+a) Fixing software bugs
+b) Making improvements to enhance functionality or performance ✅
+c) Adapting software to a new environment
+d) Completely replacing the software
+
+Explanation:
+Perfective Maintenance involves enhancing features, performance, and usability based on user feedback or new technology.
+
+30) What is N-Tier Architecture?
+a) A single-layer system
+b) A multi-layer architecture for organizing an application ✅
+c) A type of database schema
+d) A hardware-based networking model
+
+Explanation:
+N-Tier Architecture divides applications into multiple logical layers, such as Presentation (UI), Business Logic, and Database, improving modularity and scalability.
+
+31) What is Pseudocode?
+a) A compiled programming language
+b) An informal, human-readable way to write algorithms ✅
+c) A programming language with specific syntax
+d) A machine learning algorithm
+
+Explanation:
+Pseudocode is an informal way to design an algorithm before writing actual code. It does not follow any strict syntax.
+
+32) What does the git status command do?
+a) Commits changes
+b) Displays the state of the working directory and staging area ✅
+c) Merges branches
+d) Reverts changes
+
+Explanation:
+The git status command shows which files are staged, unstaged, or untracked, helping developers track their changes before committing.
+
+33) What does the git clone command do?
+a) Creates a new repository
+b) Copies an existing repository from a remote source ✅
+c) Deletes a repository
+d) Merges two repositories
+
+Explanation:
+The git clone command copies a remote repository to a local machine:
+
+bash
+Copy
+Edit
+git clone <repository_URL>
+34) What does git commit do?
+a) Saves changes permanently to the repository ✅
+b) Pushes changes to a remote repository
+c) Removes staged files
+d) Deletes branches
+
+Explanation:
+The git commit command records staged changes in the local repository:
+
+bash
+Copy
+Edit
+git commit -m "Commit message"
+35) What does git reset do?
+a) Discards commits and resets the working directory ✅
+b) Moves the HEAD pointer to a different commit
+c) Deletes files permanently
+d) Creates a new branch
+
+Explanation:
+The git reset command modifies the commit history by unstaging or removing commits. Example:
+
+bash
+Copy
+Edit
+git reset HEAD~1  # Undo the last commit
+36) What does git commit "branch1..branch2" do?
+a) Commits all changes in branch1 and branch2
+b) Creates a commit with changes between two branches ✅
+c) Switches to branch2
+d) Deletes branch1
+
+Explanation:
+The syntax git commit "branch1..branch2" is not a standard Git command, but in some cases, it may refer to commits between branch1 and branch2.
+
+36) What does the command $ git config user.name do?
+a) Sets the username globally
+b) Retrieves the configured username ✅
+c) Commits changes to the repository
+d) Switches branches
+
+Explanation:
+The command:
+
+bash
+Copy
+Edit
+git config user.name
+displays the current username set in Git's configuration. To set a username globally, use:
+
+bash
+Copy
+Edit
+git config --global user.name "Your Name"
+37) What does the GROUP BY clause do in SQL?
+a) Filters rows based on conditions
+b) Groups rows with the same values in a specified column ✅
+c) Orders rows in ascending or descending order
+d) Removes duplicate records
+
+Explanation:
+The GROUP BY statement groups records with similar values in one or more columns. It is commonly used with aggregate functions like COUNT(), SUM(), and AVG().
+
+sql
+Copy
+Edit
+SELECT class, COUNT(student_id) 
+FROM students 
+GROUP BY class;
+This query groups students by class and counts students in each class.
+
+38) What does the LIMIT 3 clause do in SQL?
+a) Deletes 3 rows from the table
+b) Retrieves only 3 rows from the table ✅
+c) Groups data into 3 categories
+d) Updates 3 specific rows
+
+Explanation:
+LIMIT restricts the number of rows returned by a query.
+Example:
+
+sql
+Copy
+Edit
+SELECT * FROM employees LIMIT 3;
+This retrieves only the first 3 rows.
+
+39) What is a LEFT JOIN in SQL?
+a) Returns only matching rows from both tables
+b) Returns all rows from the left table and matching rows from the right table ✅
+c) Returns only matching rows from the left table
+d) Returns all rows from both tables
+
+Explanation:
+A LEFT JOIN returns all records from the left table and matching records from the right table. If no match is found, NULL values are returned for the right table.
+Example:
+
+sql
+Copy
+Edit
+SELECT employees.name, departments.department_name 
+FROM employees 
+LEFT JOIN departments ON employees.department_id = departments.id;
+This ensures all employees are listed, even if they are not assigned to a department.
+
+40) How can you retrieve NULL values in SQL?
+a) Using WHERE column_name = NULL
+b) Using WHERE column_name IS NULL ✅
+c) Using WHERE column_name = "NULL"
+d) Using WHERE column_name == NULL
+
+Explanation:
+NULL values in SQL must be checked using IS NULL:
+
+sql
+Copy
+Edit
+SELECT * FROM employees WHERE salary IS NULL;
+To find non-null values, use IS NOT NULL.
+
+41) What does the DISTINCT keyword do in SQL?
+a) Filters duplicate records from a query result ✅
+b) Groups data based on conditions
+c) Orders records alphabetically
+d) Deletes duplicate rows from the database
+
+Explanation:
+DISTINCT removes duplicate values from query results.
+Example:
+
+sql
+Copy
+Edit
+SELECT DISTINCT department FROM employees;
+This retrieves unique department names.
+
+42) How do you filter salaries between 40K and 100K in SQL?
+a) WHERE salary > 40K AND salary < 100K
+b) WHERE salary = 40K OR salary = 100K
+c) WHERE salary BETWEEN 40000 AND 100000 ✅
+d) WHERE salary IN (40K, 100K)
+
+Explanation:
+The BETWEEN operator retrieves values within a range, including both endpoints:
+
+sql
+Copy
+Edit
+SELECT * FROM employees WHERE salary BETWEEN 40000 AND 100000;
+43) How many days does it take for Git to automatically delete history?
+a) 30 days
+b) 90 days
+c) 180 days
+d) Git does not automatically delete history ✅
+
+Explanation:
+Git does not delete history automatically. To manually remove history, you need to:
+
+Rewrite history (git rebase or git filter-branch)
+Prune unreachable objects (git gc --prune=now)
+44) What happens when you run the following SQL query?
+sql
+Copy
+Edit
+DELETE FROM employees WHERE id IN (100, 101, 105);
+a) Deletes only the first matching record
+b) Deletes all records where id is 100, 101, or 105 ✅
+c) Does not delete any record
+d) Deletes all records in the table
+
+Explanation:
+The query deletes multiple records with matching IDs.
+
+45) How do you declare a variable in SQL?
+a) DECLARE @variable_name TYPE ✅
+b) VAR variable_name TYPE
+c) SET variable_name = VALUE
+d) CREATE variable_name TYPE
+
+Explanation:
+In SQL Server, variables are declared using DECLARE:
+
+sql
+Copy
+Edit
+DECLARE @salary INT;
+SET @salary = 50000;
+In MySQL, use SET:
+
+sql
+Copy
+Edit
+SET @salary = 50000;
+
+==================================================================================================================================
+
