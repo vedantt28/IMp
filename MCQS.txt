@@ -2016,5 +2016,1627 @@ Explanation: The WITH clause (Common Table Expression - CTE) creates a temporary
 ---
 
 These MCQs cover SQL concepts with detailed explanations. Let me know if you need more!
+========================================================================================================================================================================================================
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Question 1
+(A/An) ____________ is a contract in the form of a collection of method and constant declarations. When a class implements (a/an) ____________, it promises to implement all of the methods declared in that ____________.
 
+A) Class
+
+B) Interface
+
+C) Object
+
+D) Method
+
+Answer: B) Interface Explanation: An interface is a contract in the form of a collection of method and constant declarations. When a class implements an interface, it promises to implement all of the methods declared in that interface.
+
+Question 2
+The phrase “is a” refers to the object-oriented concept of ____________, and the phrase “has a” refers to the object-oriented concept of ____________.
+
+A) Inheritance, Association
+
+B) Polymorphism, Inheritance
+
+C) Association, Composition
+
+D) Inheritance, Composition
+
+Answer: D) Inheritance, Composition Explanation: The phrase “is a” refers to inheritance (an object is a type of another object), while the phrase “has a” refers to composition (an object contains another object).
+
+Question 3
+Runtime Polymorphism is achieved by ______.
+
+A) Method Overloading
+
+B) Method Overriding
+
+C) Operator Overloading
+
+D) Constructor Overloading
+
+Answer: B) Method Overriding Explanation: Runtime Polymorphism is achieved by method overriding, where a subclass provides a specific implementation of a method already defined in its superclass.
+
+Question 4
+What makes a class abstract?
+
+A) It has only private methods
+
+B) It cannot be instantiated
+
+C) It has only static methods
+
+D) It can only be used as a superclass
+
+Answer: B) It cannot be instantiated Explanation: An abstract class cannot be instantiated. It is meant to be subclassed, and its abstract methods must be implemented by its subclasses.
+
+Question 5
+The class at the top of the exception class hierarchy is __________.
+
+A) Throwable
+
+B) Error
+
+C) Exception
+
+D) RuntimeException
+
+Answer: A) Throwable Explanation: The class Throwable is at the top of the exception class hierarchy in Java. It is the superclass of all exceptions and errors.
+
+Question 6
+What is the output of the following program?
+
+java
+public class Test {
+    public static void main(String args[]) {
+        try {
+            int i;
+            return;
+        } catch (Exception e) {
+            System.out.print("inCatchBlock");
+        } finally {
+            System.out.println("inFinallyBlock");
+        }
+    }
+}
+A) No output
+
+B) inCatchBlock
+
+C) inFinallyBlock
+
+D) Compilation error
+
+Answer: C) inFinallyBlock Explanation: The finally block is always executed regardless of whether an exception is thrown or not.
+
+Question 7
+What is the output of this program?
+
+java
+class output {
+    public static void main(String args[]) {
+        String c = "Hello I love Java";
+        boolean var;
+        var = c.startsWith("hello");
+        System.out.println(var);
+    }
+}
+A) true
+
+B) false
+
+C) Compilation error
+
+D) Runtime error
+
+Answer: B) false Explanation: The method startsWith is case-sensitive. Since "Hello" and "hello" are different, the method returns false.
+
+Question 8
+What is the output of this program?
+
+java
+public class Test {
+    public static void main(String args[]) {
+        int i;
+        try {
+            i = calculate();
+            System.out.println(i);
+        } catch (Exception e) {
+            System.out.println("Error occurred");
+        }
+    }
+
+    static int calculate() {
+        return (7 / 2);
+    }
+}
+A) 3
+
+B) 3.5
+
+C) Error occurred
+
+D) Compilation error
+
+Answer: A) 3 Explanation: The division of two integers results in an integer. So, 7/2 equals 3.
+
+Question 9
+Which of the following statements is correct regarding exception handling in Java?
+
+A) A single catch block can catch multiple types of exceptions.
+
+B) The finally block is executed only if an exception is thrown.
+
+C) The catch block must follow the finally block.
+
+D) The catch block must handle IOException before handling Exception.
+
+Answer: D) The catch block must handle IOException before handling Exception Explanation: In Java, catch blocks for subtypes of Exception must be placed before the catch block for Exception to prevent compilation errors.
+
+Question 10
+A property which is not true for classes is that they:
+
+A) Can be instantiated
+
+B) Can have methods
+
+C) Can implement multiple interfaces
+
+D) Can inherit from multiple classes
+
+Answer: D) Can inherit from multiple classes Explanation: In Java, a class cannot inherit from multiple classes (no multiple inheritance).
+
+Question 11
+The process of building new classes from existing ones is called:
+
+A) Encapsulation
+
+B) Polymorphism
+
+C) Inheritance
+
+D) Abstraction
+
+Answer: C) Inheritance Explanation: Inheritance is the process of building new classes from existing ones.
+
+Question 12
+Data members which are static:
+
+A) Are instance variables
+
+B) Are shared among all instances of the class
+
+C) Can be accessed only within the class
+
+D) Cannot be changed after initialization
+
+Answer: B) Are shared among all instances of the class Explanation: Static data members are shared among all instances of the class.
+
+Question 13
+Exception handling is targeted at:
+
+A) Logging errors
+
+B) Preventing exceptions
+
+C) Handling run-time errors
+
+D) Improving code performance
+
+Answer: C) Handling run-time errors Explanation: Exception handling is primarily used to handle run-time errors.
+
+Question 14
+Which of the following is NOT a key component of object-oriented programming?
+
+A) Encapsulation
+
+B) Abstraction
+
+C) Polymorphism
+
+D) Compilation
+
+Answer: D) Compilation Explanation: Compilation is not a key component of object-oriented programming.
+
+Question 15
+Which of these is TRUE of the relationship between objects and classes?
+
+A) An object is an instance of a class
+
+B) A class is an instance of an object
+
+C) Objects and classes are the same
+
+D) Classes are created from objects
+
+Answer: A) An object is an instance of a class Explanation: An object is an instance of a class.
+
+Question 16
+The Java compiler translates source code into:
+
+A) Machine code
+
+B) Byte code
+
+C) Assembly code
+
+D) Intermediate code
+
+Answer: B) Byte code Explanation: The Java compiler translates source code into byte code, which is executed by the Java Virtual Machine (JVM).
+
+Question 17
+Which of the following is NOT a valid ‘type’ in Java?
+
+A) int
+
+B) float
+
+C) string
+
+D) boolean
+
+Answer: C) string Explanation: The valid type in Java is String with a capital "S", not string.
+
+Question 18
+Which of the following statements is NOT correct?
+
+A) An abstract class cannot be instantiated
+
+B) A class can implement multiple interfaces
+
+C) A method can be overridden in a subclass
+
+D) A constructor can be inherited
+
+Answer: D) A constructor can be inherited Explanation: Constructors are not inherited in Java.
+
+Question 19
+What are the different forms of Polymorphism?
+
+A) Static and Dynamic
+
+B) Compile-time and Run-time
+
+C) Overloading and Overriding
+
+D) All of the above
+
+Answer: D) All of the above Explanation: Polymorphism can be categorized into static (compile-time) and dynamic (run-time). Method overloading is an example of static polymorphism, while method overriding is an example of dynamic polymorphism.
+
+Question 1
+What is true about method overloading?
+
+A) Overloaded methods must change the argument list
+
+B) Overloaded methods can change the return type
+
+C) Overloaded methods can change the access modifier
+
+D) All of the above
+
+Answer: D) All of the above Explanation: Method overloading occurs when a class has multiple methods with the same name but different parameters (argument lists). Overloaded methods can also have different return types and access modifiers.
+
+Question 2
+What is true about method overriding?
+
+A) You can't override a method marked public and make it protected
+
+B) You cannot override a method marked final
+
+C) You cannot override a method marked static
+
+D) All of the above
+
+Answer: D) All of the above Explanation: Method overriding occurs when a subclass provides a specific implementation of a method already defined in its superclass. You can't override a method marked public and make it protected, and you cannot override methods marked final or static.
+
+Question 3
+What is true about an interface?
+
+A) You can’t mark an interface as final
+
+B) Interface variables must be static
+
+C) An interface cannot extend anything but other interfaces
+
+D) All of the above
+
+Answer: D) All of the above Explanation: Interfaces can't be marked as final, their variables must be static, and they can only extend other interfaces.
+
+Question 4
+Which statement is true for a constructor?
+
+A) A constructor has the same name as the class name
+
+B) A constructor should not have a return type
+
+C) A class can contain more than one constructor, so it can be overloaded
+
+D) All of the above
+
+Answer: D) All of the above Explanation: Constructors have the same name as the class, do not have a return type, and can be overloaded (a class can have multiple constructors with different parameter lists).
+
+Question 5
+What is the prototype of the default constructor for the class Test?
+
+A) Test(int i)
+
+B) Test()
+
+C) Test(void)
+
+D) No default constructor
+
+Answer: B) Test() Explanation: The default constructor is a no-argument constructor with the same name as the class.
+
+Question 6
+The return data type of void means?
+
+A) No return type
+
+B) Returns an integer
+
+C) Returns a string
+
+D) Returns a boolean
+
+Answer: A) No return type Explanation: The void keyword specifies that a method does not have a return type.
+
+Question 7
+Which statement is NOT correct about objects?
+
+A) Objects do not permit encapsulation
+
+B) Objects are instances of classes
+
+C) Objects can have methods
+
+D) Objects can have attributes
+
+Answer: A) Objects do not permit encapsulation Explanation: Objects do permit encapsulation, which is one of the fundamental principles of object-oriented programming.
+
+Question 8
+If an attribute is private, which methods have access to it?
+
+A) Only those defined in the same class
+
+B) Methods in the same package
+
+C) Methods in subclasses
+
+D) All methods in the program
+
+Answer: A) Only those defined in the same class Explanation: Private attributes can only be accessed by methods within the same class.
+
+Question 9
+What is an aggregate object?
+
+A) An object that cannot be instantiated
+
+B) An object instance that contains other objects
+
+C) An object with only static methods
+
+D) An object with no attributes
+
+Answer: B) An object instance that contains other objects Explanation: An aggregate object contains other objects and is a form of composition.
+
+Question 10
+A class can have many methods with the same name, as long as the number of parameters is different. This is known as:
+
+A) Method Overriding
+
+B) Method Overloading
+
+C) Method Hiding
+
+D) Method Inheritance
+
+Answer: B) Method Overloading Explanation: Method overloading allows a class to have multiple methods with the same name but different parameter lists.
+
+Question 11
+The process of building new classes from existing ones is called ______.
+
+A) Encapsulation
+
+B) Polymorphism
+
+C) Inheritance
+
+D) Abstraction
+
+Answer: C) Inheritance Explanation: Inheritance is the process of building new classes from existing ones.
+
+Question 12
+If an array is declared as int a[4] = {3, 0, 1, 2}, then values assigned to a[0] and a[4] will be ________.
+
+A) 3, 0
+
+B) 3, garbage value
+
+C) 3, compilation error
+
+D) 3, 2
+
+Answer: C) 3, compilation error Explanation: Accessing a[4] will result in a compilation error as the valid indices for the array are 0 to 3.
+
+Question 13
+Mechanism of deriving a class from another derived class is known as____.
+
+A) Single Inheritance
+
+B) Multiple Inheritance
+
+C) Multilevel Inheritance
+
+D) Hybrid Inheritance
+
+Answer: C) Multilevel Inheritance Explanation: Multilevel inheritance involves deriving a class from another derived class.
+
+Question 14
+Runtime Polymorphism is achieved by ______.
+
+A) Method Overloading
+
+B) Method Overriding
+
+C) Constructor Overloading
+
+D) Operator Overloading
+
+Answer: B) Method Overriding Explanation: Runtime polymorphism is achieved by method overriding, where a subclass provides a specific implementation of a method already defined in its superclass.
+
+Question 15
+A property which is not true for classes is that they:
+
+A) Can be instantiated
+
+B) Can have methods
+
+C) Can implement multiple interfaces
+
+D) Can inherit from multiple classes
+
+Answer: D) Can inherit from multiple classes Explanation: In Java, a class cannot inherit from multiple classes (no multiple inheritance).
+
+Question 16
+Data members which are static:
+
+A) Are instance variables
+
+B) Are shared among all instances of the class
+
+C) Can be accessed only within the class
+
+D) Cannot be changed after initialization
+
+Answer: B) Are shared among all instances of the class Explanation: Static data members are shared among all instances of the class.
+
+Question 17
+Exception handling is targeted at:
+
+A) Logging errors
+
+B) Preventing exceptions
+
+C) Handling run-time errors
+
+D) Improving code performance
+
+Answer: C) Handling run-time errors Explanation: Exception handling is primarily used to handle run-time errors.
+
+Question 18
+Which of the following is NOT a key component of object-oriented programming?
+
+A) Encapsulation
+
+B) Abstraction
+
+C) Polymorphism
+
+D) Compilation
+
+Answer: D) Compilation Explanation: Compilation is not a key component of object-oriented programming.
+
+Question 19
+Which of these is TRUE of the relationship between objects and classes?
+
+A) An object is an instance of a class
+
+B) A class is an instance of an object
+
+C) Objects and classes are the same
+
+D) Classes are created from objects
+
+Answer: A) An object is an instance of a class Explanation: An object is an instance of a class.
+
+Question 1
+To which class do the methods wait(), notify(), notifyAll() belong?
+
+A) java.lang.String
+
+B) java.lang.Thread
+
+C) java.lang.Object
+
+D) java.lang.Runnable
+
+Answer: C) java.lang.Object Explanation: The methods wait(), notify(), and notifyAll() are defined in the java.lang.Object class.
+
+Question 2
+What will be the output of the following code?
+
+java
+public class test1 {
+    public static void main(String[] args) {
+        int b = Integer.parseInt("123a");
+        System.out.println("the value is " + b);
+    }
+}
+A) 123
+
+B) 0
+
+C) Compilation error
+
+D) NumberFormatException
+
+Answer: D) NumberFormatException Explanation: The code will throw a NumberFormatException because "123a" is not a valid integer.
+
+Question 3
+What will be the output of the following code?
+
+java
+public class foo {
+    int a = 10;
+    public static void main(String[] args) {
+        System.out.println("the value is " + a);
+    }
+}
+A) the value is 10
+
+B) 10
+
+C) Compilation error
+
+D) Runtime error
+
+Answer: C) Compilation error Explanation: The code will result in a compilation error because the variable a is not accessible from the static context of the main method.
+
+Question 4
+Which collection does not allow duplicate entries?
+
+A) List
+
+B) Set
+
+C) Map
+
+D) Queue
+
+Answer: B) Set Explanation: The Set collection does not allow duplicate entries.
+
+Question 5
+Which collection maintains sorted order?
+
+A) ArrayList
+
+B) HashMap
+
+C) LinkedList
+
+D) TreeMap
+
+Answer: D) TreeMap Explanation: The TreeMap collection maintains its elements in sorted order.
+
+Question 6
+How do you define a user-defined exception?
+
+A) throws
+
+B) throw
+
+C) catch
+
+D) finally
+
+Answer: B) throw Explanation: The throw keyword is used to define a user-defined exception.
+
+Question 7
+Which method moves an arbitrary thread from the wait pool to the lock pool?
+
+A) wait()
+
+B) notify()
+
+C) notifyAll()
+
+D) sleep()
+
+Answer: B) notify Explanation: The notify() method moves an arbitrary thread from the wait pool to the lock pool.
+
+Question 8
+Which methods will throw an IOException?
+
+A) read(), close()
+
+B) write(), readLine()
+
+C) open(), delete()
+
+D) save(), update()
+
+Answer: A) read(), close() Explanation: The read() and close() methods can throw an IOException.
+
+Question 9
+Which exception is thrown by the create new file method?
+
+A) FileNotFoundException
+
+B) IOException
+
+C) ArithmeticException
+
+D) ArrayIndexOutOfBoundsException
+
+Answer: B) IOException Explanation: The createNewFile() method can throw an IOException.
+
+Question 10
+How can you enter primitive data into a file?
+
+A) FileInputStream
+
+B) FileOutputStream
+
+C) DataInputStream
+
+D) DataOutputStream
+
+Answer: D) DataOutputStream Explanation: The DataOutputStream class can be used to write primitive data types to a file.
+
+Question 11
+What will be the output of the following code?
+
+java
+int total = 0;
+for (int i = 0, j = 10; total > 30; ++i, --j) {
+    total += i + j;
+    System.out.println(i + "   " + j);
+}
+System.out.println(total);
+A) Compilation error
+
+B) 0
+
+C) 10
+
+D) 30
+
+Answer: B) 0 Explanation: The loop condition total > 30 is false initially, so the loop does not execute, and the value of total remains 0.
+
+Question 12
+What happens to the transient field when an object is serialized?
+
+java
+int empno;
+String name, address;
+transient int phoneno;
+A) It is serialized normally
+
+B) It is not serialized
+
+C) It throws an exception
+
+D) It is serialized as zero
+
+Answer: B) It is not serialized Explanation: The transient keyword prevents the field from being serialized.
+
+Question 13
+Which interface must be implemented by a class to become a thread?
+
+java
+public class abc implements runnable {
+    public void run() {}
+}
+A) Thread
+
+B) Runnable
+
+C) Callable
+
+D) ActionListener
+
+Answer: B) Runnable Explanation: The Runnable interface must be implemented by a class to define the run() method for a thread.
+
+0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-
+Question 14
+Can an interface be nested?
+
+A) Yes
+
+B) No
+
+C) Only in abstract classes
+
+D) Only in concrete classes
+
+Answer: A) Yes Explanation: In Java, interfaces can be nested within other interfaces or classes.
+
+Question 15
+What will be the result of the following code?
+
+java
+int a[5];
+System.in.read(a[1]);
+A) The value is read into a[1]
+
+B) Compilation error
+
+C) Runtime error
+
+D) The value is read into a[0]
+
+Answer: B) Compilation error Explanation: The read method does not support reading into specific array indices in this manner.
+
+Question 16
+To execute threads one by one, which keyword is used?
+
+A) synchronized
+
+B) volatile
+
+C) transient
+
+D) static
+
+Answer: A) synchronized Explanation: The synchronized keyword ensures that threads execute one by one by acquiring the monitor lock.
+
+Question 17
+Which function is used to copy an array?
+
+A) System.copy
+
+B) System.arrayCopy
+
+C) System.arraycopy
+
+D) System.clone
+
+Answer: C) System.arraycopy Explanation: The System.arraycopy method is used to copy an array.
+
+Question 18
+Which operations are typical for a stack?
+
+A) Insert and Delete
+
+B) Push and Pop
+
+C) Enqueue and Dequeue
+
+D) Add and Remove
+
+Answer: B) Push and Pop Explanation: A stack supports push (inserting elements) and pop (removing elements) operations.
+
+Question 19
+Which collection is used to shrink the data?
+
+A) HashSet
+
+B) TreeSet
+
+C) LinkedList
+
+D) Java.Util.ArrayList
+
+Answer: D) Java.Util.ArrayList Explanation: ArrayList can dynamically resize, which can be used to shrink or grow the data.
+
+Question 20
+What are the differences between StringBuffer and StringBuilder?
+
+A) StringBuffer is synchronized; StringBuilder is not synchronized and is faster
+
+B) StringBuffer is not synchronized; StringBuilder is synchronized
+
+C) StringBuffer is faster; StringBuilder is slower
+
+D) Both are the same
+
+Answer: A) StringBuffer is synchronized; StringBuilder is not synchronized and is faster Explanation: StringBuffer is synchronized and thread-safe, while StringBuilder is not synchronized but faster.
+
+Question 21
+Which exception is commonly associated with file data writing issues?
+
+A) IOException
+
+B) FileNotFoundException
+
+C) ArrayIndexOutOfBoundsException
+
+D) ArithmeticException
+
+Answer: B) FileNotFoundException Explanation: FileNotFoundException is thrown when a file operation fails due to the file not being found.
+
+Question 22
+What is the output of the following program?
+
+java
+public class Test implements Runnable {
+    public void run() {
+        System.out.println("Wipro call run()");
+    }
+    public static void main(String args[]) {
+        new Thread(new Test()).start();
+    }
+}
+A) Wipro call run()
+
+B) Compilation error
+
+C) Runtime error
+
+D) No output
+
+Answer: A) Wipro call run() Explanation: The run method is correctly implemented, and the thread execution prints "Wipro call run()".
+
+Question 23
+What will be the output of the following code?
+
+java
+HashSet ar = new HashSet();
+System.out.println(ar.add("abce"));
+System.out.println(ar.add("abcf"));
+System.out.println(ar.add("abcg"));
+System.out.println(ar.add("abce"));
+A) true true true true
+
+B) true true false false
+
+C) true true true false
+
+D) false false false false
+
+Answer: C) true true true false Explanation: HashSet does not allow duplicate entries, so the last add operation returns false.
+
+Question 24
+What will be the result of the following code?
+
+java
+HashMap<String, Integer> setLoc = new HashMap<>();
+setLoc.put("a", new Integer(1));
+setLoc.put("b", new Integer(2));
+setLoc.put("c", new Integer(3));
+System.out.println(setLoc.get("b"));
+A) 1
+
+B) 2
+
+C) 3
+
+D) Compilation error
+
+Answer: B) 2 Explanation: The put and get methods are correctly used to store and retrieve values from the HashMap.
+
+Question 25
+Which statements are true about interface methods?
+
+A) Interface methods can be declared as final, public, and static
+
+B) Interface methods can only be declared as public
+
+C) Interface methods can be private
+
+D) Interface methods can have any access modifier
+
+Answer: B) Interface methods can only be declared as public Explanation: By default, all interface methods are public and abstract; they cannot be declared final, static, or private.
+
+Question 26
+Can a class implement more than one interface?
+
+A) Yes
+
+B) No
+
+C) Only if the interfaces are related
+
+D) Only if the class is abstract
+
+Answer: A) Yes Explanation: A class can implement multiple interfaces.
+
+Question 27
+In which package is the Comparator interface present?
+
+A) java.lang
+
+B) java.io
+
+C) java.net
+
+D) java.util
+
+Answer: D) java.util Explanation: The Comparator interface is part of the java.util package.
+
+Question 28
+What will be the output of the following code?
+
+java
+public class Test implements Runnable {
+    public void run() {
+        System.out.println("foo");
+    }
+    public void run(String s) {
+        System.out.println("bar");
+    }
+    public static void main(String[] args) {
+        Thread ob = new Thread(new Test());
+        ob.start();
+    }
+}
+A) bar
+
+B) foo
+
+C) Compilation error
+
+D) Runtime error
+
+Answer: B) foo Explanation: The run method with no parameters is the one that gets executed by the Thread class.
+
+Question 29
+What does the replace method do?
+
+A) Replaces a single occurrence of a character
+
+B) Replaces all occurrences of a character or substring
+
+C) Replaces the first occurrence of a character
+
+D) Appends a character to the string
+
+Answer: B) Replaces all occurrences of a character or substring Explanation: The replace method replaces all occurrences of a character or substring with another character or substring.
+
+Question 30
+What will be the result of the following code?
+
+java
+FileInputStream fin;
+int c = 0;
+while ((c = fin.read()) != -1) {
+    fin = new FileInputStream(args[0]);
+    System.out.println((char) c);
+}
+A) Compilation error
+
+B) TypeCast error
+
+C) Runtime error
+
+D) FileNotFoundException
+
+Answer: B) TypeCast error Explanation: The expression (c = fin.read()) != -1 has a type casting issue that needs correction.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Question 31
+Given:
+
+java
+interface Jumper { public void jump(); }
+...
+class Animal {}
+...
+class Dog extends Animal {
+    Tail tail;
+}
+...
+class Beagle extends Dog implements Jumper {
+    public void jump() {}
+}
+...
+class Cat implements Jumper {
+    public void jump() {}
+}
+Which three are true? (Choose three.)
+
+A) Cat is-a Animal
+
+B) Cat is-a Jumper
+
+C) Dog is-a Animal
+
+D) Dog is-a Jumper
+
+E) Cat has-a Animal
+
+F) Beagle has-a Tail
+
+G) Beagle has-a Jumper
+
+Answer: B) Cat is-a Jumper, C) Dog is-a Animal, F) Beagle has-a Tail Explanation:
+
+B: Cat implements the Jumper interface, so Cat is-a Jumper.
+
+C: Dog extends Animal, so Dog is-a Animal.
+
+F: Beagle has a Tail because it extends Dog, which contains a Tail object.
+
+Question 32
+What will be the output of the following code?
+
+java
+public class Program1 {
+    public static void main(String[] args) {
+        Runnable r1 = new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("This is a run method");
+            }
+        };
+        Thread t1 = new Thread(r1);
+        t1.start();
+        
+        Runnable r2 = () -> {
+            System.out.println("My name is Sandip");
+        };
+        Thread t2 = new Thread(r2);
+        t2.start();
+    }
+}
+A) Compilation error
+
+B) This is a run method
+
+C) My name is Sandip
+
+D) This is a run method and My name is Sandip
+
+Answer: D) This is a run method and My name is Sandip Explanation: The program defines and starts two threads. Each thread executes its respective run method and prints the corresponding message. Therefore, both messages "This is a run method" and "My name is Sandip" will be printed.
+
+Question 33
+User-defined exceptions in Java are typically:
+
+A) Checked exceptions
+
+B) Unchecked exceptions
+
+C) Runtime exceptions
+
+D) Errors
+
+Answer: B) Unchecked exceptions Explanation: User-defined exceptions in Java are typically unchecked exceptions, as they usually extend RuntimeException.
+
+I hope these questions and explanations help! If you need more assistance, feel free to ask.
+=======================================================================================================================================================================================================
+1) Byte Range
+
+A. -128 to 127
+
+B. -256 to 255
+
+C. -64 to 63
+
+D. 0 to 255
+
+Answer: A
+
+Explanation: In Java, a byte type is an 8-bit signed integer that ranges from -128 to 127.
+
+2) User-defined Exceptions that Extend Exception Class
+
+A. Checked exception
+
+B. Unchecked exception
+
+C. System exception
+
+D. Runtime exception
+
+Answer: B
+
+Explanation: User-defined exceptions that extend the Exception class are typically checked exceptions.
+
+3) Which of the following is not a checked exception?
+
+A. IOException
+
+B. SQLException
+
+C. ArithmeticException
+
+D. FileNotFoundException
+
+Answer: C
+
+Explanation: ArithmeticException is an unchecked exception that occurs when an exceptional arithmetic condition has occurred.
+
+4) Binary Search Time Complexity
+
+A. O(n)
+
+B. O(n log n)
+
+C. O(log n)
+
+D. O(n^2)
+
+Answer: C
+
+Explanation: Binary search algorithm has a time complexity of O(log n), as it halves the search space with each step.
+
+5) Which of the following keywords are not used for exception handling?
+
+A. try
+
+B. catch
+
+C. access
+
+D. finally
+
+Answer: C
+
+Explanation: access is not used for exception handling in Java. The correct keywords are try, catch, finally, and throw.
+
+6) Printer Question (Example Names in Queue)
+
+A. Mathews
+
+B. Suzanne
+
+C. John
+
+D. Queue
+
+Answer: Based on the context, all names might be part of the queue, but the question seems incomplete. Please clarify for precise details.
+
+7) Public Class Fisherman if(f is instance of p)
+
+A. f-p
+
+B. w-f
+
+C. instance-f
+
+D. class-f
+
+Answer: A
+
+Explanation: Without the full context, if checking instance relationships, f-p might imply f is an instance of p.
+
+8) Local Repository Stores
+
+A. ${Local.home}/m2/repository
+
+B. /usr/local/repo
+
+C. ${user.home}/.m2/repository
+
+D. ${repo.home}
+
+Answer: C
+
+Explanation: Maven uses the default local repository at ${user.home}/.m2/repository.
+
+9) Which Sorting Will Have Two Sub Lists
+
+A. Bubble sort
+
+B. Selection sort
+
+C. Merge sort
+
+D. Quick sort
+
+Answer: B
+
+Explanation: Selection sort maintains a sorted sublist and an unsorted sublist as it progresses through the array.
+
+10) Which Concept Will Hide Some Info and Only Show Essential Info
+
+A. Inheritance
+
+B. Encapsulation
+
+C. Polymorphism
+
+D. Abstraction
+
+Answer: D
+
+Explanation: Abstraction is the concept of hiding the complex implementation details and showing only the essential features of an object.
+
+11) Which Access Modifier is Used When You Do Not Inherit the Class by Others and Which Keyword is Used to Create Interface
+
+A. Public, extends
+
+B. Private, implements
+
+C. Protected, new
+
+D. Final, interface
+
+Answer: D
+
+Explanation: final modifier prevents inheritance, and interface keyword is used to declare an interface.
+
+12) Which of the following methods is used for instantiating objects of a class
+
+A. finalize
+
+B. static
+
+C. constructor
+
+D. destructor
+
+Answer: C
+
+Explanation: A constructor is a special method used to initialize objects of a class.
+
+13) Which of the following methods can be accessed using method reference
+
+A. Static methods
+
+B. Instance methods
+
+C. Constructor methods
+
+D. All of the above
+
+Answer: D
+
+Explanation: In Java, method references can refer to static methods, instance methods, and constructors.
+
+14) Which of the following is relevant to transient
+
+A. Serialization
+
+B. Deserialization
+
+C. Persistence
+
+D. Inheritance
+
+Answer: A
+
+Explanation: transient keyword in Java is used to indicate that a field should not be serialized.
+
+15) By which of the following we can achieve synchronization
+
+A. Synchronized methods
+
+B. Synchronized blocks
+
+C. Volatile keyword
+
+D. Concurrent collections
+
+Answer: A & B
+
+Explanation: Synchronization can be achieved using synchronized methods and blocks to control access to critical sections of code.
+
+
+16) Thread(isAlive())
+
+A. true
+
+B. false
+
+Answer: B
+
+Explanation: isAlive() method returns false if the thread is not active or has not been started.
+
+17) Bank Question
+
+A. Thread synchronization
+
+B. Thread asynchronization
+
+C. Thread priority
+
+D. Thread deadlock
+
+Answer: A
+
+Explanation: Thread synchronization ensures that shared resources are accessed by only one thread at a time to avoid data inconsistency.
+
+18) In which line the code has error for counting the number of elements in LinkedList
+
+A. int count = 0
+
+B. Node current = head
+
+C. while (current != null) { count++; current = current.next; }
+
+D. int count = 1
+
+Answer: D
+
+Explanation: The initial value of count should be 0, not 1, to accurately count the number of elements in a LinkedList.
+
+19) meth() function question
+
+A. 42
+
+B. 3
+
+C. 12
+
+Answer: Depending on specific code, the output can vary. It’s essential to see the actual method definition.
+
+20) Exception handling code
+
+A. Exception for parent class exception is caught before the child class
+
+B. Exception for child class exception is caught before the parent class
+
+Answer: A
+
+Explanation: In Java, when catching exceptions, the more general (parent) exception should be caught after the more specific (child) exceptions to avoid unreachable code.
+
+21) Files Question of "Hello world"
+
+A. H
+
+B. e
+
+C. l
+
+D. o
+
+Answer: A
+
+Explanation: If reading the first character of the string "Hello world", it will be 'H'.
+
+22) Which interface does not allow duplicate values and should print in natural order
+
+A. List
+
+B. Set
+
+C. Queue
+
+D. Map
+
+Answer: B
+
+Explanation: The Set interface does not allow duplicate values and, if implemented by a TreeSet, prints in natural order.
+
+23) Which is the function that works on map
+
+A. get()
+
+B. put()
+
+C. add()
+
+D. remove()
+
+Answer: B
+
+Explanation: The put() method is used to insert or update key-value pairs in a Map.
+
+24) Which elements are used to identify a dependent artifact in a pom.xml file
+
+A. version
+
+B. groupId
+
+C. artifactId
+
+D. All of the above
+
+Answer: D
+
+Explanation: In Maven, groupId, artifactId, and version are used to identify a specific dependent artifact in a pom.xml file.
+
+25) What is true about mvn clean
+
+A. It builds the project
+
+B. It removes the target directory
+
+C. It runs tests
+
+D. It packages the project
+
+Answer: B
+
+Explanation: The mvn clean command removes the target directory, which contains the build output.
+
+26) Which of the following scope is used only when the dependency is of pom type
+
+A. compile
+
+B. test
+
+C. provided
+
+D. import
+
+Answer: D
+
+Explanation: The import scope is used when the dependency is of pom type.
+
+27) Which plugin uses the information in the pom to determine the proper location for the artifact within the local repository
+
+A. maven-deploy-plugin
+
+B. maven-clean-plugin
+
+C. maven-install-plugin
+
+D. maven-compiler-plugin
+
+Answer: C
+
+Explanation: The maven-install-plugin is used to install the built artifact into the local repository.
+
+28) JVM is not able to allocate memory to create an object Question
+
+A. JVM will throw error and program abort as this situation cannot be handled by programming
+
+B. JVM will try to free up memory
+
+Answer: A
+
+Explanation: If the JVM cannot allocate memory to create an object, it will throw an OutOfMemoryError and the program will abort.
+
+29) Boxing
+
+A. Integer.valueOf(10)
+
+B. new Integer(10)
+
+C. Integer.parseInt("10")
+
+Answer: A
+
+Explanation: Integer.valueOf(10) is an example of boxing, where a primitive int value is wrapped in an Integer object.
+
+30) List.add("paper")
+
+A. No Exception
+
+B. Compile-time Exception
+
+C. Runtime Exception
+
+D. Logic Exception
+
+Answer: C
+
+Explanation: Adding an element to a List using add("paper") may throw a RuntimeException if the list is not modifiable or if it is a fixed-size list.
+
+31) Vanilla, Chocolate?
+
+A. IndexOutOfBoundsException
+
+B. ArrayIndexOutOfBoundsException
+
+C. NullPointerException
+
+D. ArithmeticException
+
+Answer: B
+
+Explanation: ArrayIndexOutOfBoundsException occurs when trying to access an array with an illegal index, either negative or beyond the array size.
+
+32) Interface Jumper
+
+A. cat is a jumper
+
+B. dog is an animal
+
+C. Beagle has a tail
+
+Answer: This question seems to be incomplete or context-specific. Typically, this would be used in an OOP context to demonstrate implementing an interface.
+
+33) List.set(0, "Data Structures")
+
+A. Compilation Error: cannot convert from Object to boolean
+
+B. Runtime Error
+
+C. No Error
+
+D. Logical Error
+
+Answer: A
+
+Explanation: If there’s a compilation error, it might be due to type mismatches, incorrect method calls, or misplaced syntax. Here, it seems like there's an issue with type conversion.
+
+34) public class score implements Comparable()
+
+A. public int compareTo(Score other) {/more code here/}
+
+B. public boolean compareTo(Score other) {/more code here/}
+
+C. public void compareTo(Score other) {/more code here/}
+
+Answer: A
+
+Explanation: When implementing the Comparable interface in Java, the compareTo method should return an int.
+
+35) One question regarding date
+
+A. LocalDate currentDate = new LocalDate.now()
+
+B. LocalDate currentDate = LocalDate.now()
+
+C. LocalDate currentDate = new Date()
+
+Answer: B
+
+Explanation: LocalDate.now() is the correct way to obtain the current date using the LocalDate class in Java.
+
+36) Thread t = new Thread(); System.out.println(t.isAlive())
+
+A. true
+
+B. false
+
+Answer: B
+
+Explanation: The isAlive() method returns false if the thread has not been started.
+
+37) What are the eligible methods for interfaces?
+
+A. boolean getAmount(boolean[] args)
+
+B. public static void main(String[] args)
+
+C. public void main(String[] args)
+
+D. protected void getAmount()
+
+E. private double getAmount()
+
+Answer: A, B, C
+
+Explanation: In an interface, methods can be public or default. protected and private methods are not allowed in interfaces. Static methods are allowed in interfaces starting from Java 8.
+
+38) public static threads extends Thread{ ... }
+
+A. Thread[main, 5, main]
+
+Answer: A
+
+Explanation: The currentThread() method returns a reference to the currently executing thread, and toString() method outputs the thread's name, priority, and thread group.
+
+39) Which method is required for loading a database driver in JDBC?
+
+A. Class.forName()
+
+B. registerDriver()
+
+Answer: A & B
+
+Explanation: Both Class.forName() and DriverManager.registerDriver() can be used to load and register a database driver.
+
+40) Which of the following is used to limit the number of rows returned?
+
+A. setMaxRows(int i)
+
+B. setFetchSize(int size)
+
+C. setRowCount(int count)
+
+Answer: A
+
+Explanation: The setMaxRows(int i) method is used to limit the number of rows returned by a query.
+
+41) What is the return type of the hashCode() method?
+
+A. int
+
+B. long
+
+C. boolean
+
+D. String
+
+Answer: A
+
+Explanation: The hashCode() method returns an int value that represents the hash code of an object.
+
+=======================================================================================================================================================================================
 
