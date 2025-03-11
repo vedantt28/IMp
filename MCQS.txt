@@ -3,33 +3,27 @@ A. True
 B. False
 
 Answer: B. False
-
 Explanation:
 User-defined exceptions in Java are typically checked exceptions when they extend the Exception class. However, if they extend RuntimeException, they become unchecked exceptions.
 
 2) Given:
-java
-Copy
-Edit
 interface Jumper { public void jump(); }
 class Animal {}
 class Dog extends Animal { Tail tail; }
 class Beagle extends Dog implements Jumper { public void jump() {} }
 class Cat implements Jumper { public void jump() {} }
-Which three statements are true? (Choose three.)
 
-A. Cat is-a Animal
-B. Cat is-a Jumper
-C. Dog is-a Animal
+Which three statements are true? (Choose three.)
+A. Cat is-a Animal 
+B. Cat is-a Jumper  True
+C. Dog is-a Animal  True
 D. Dog is-a Jumper
 E. Cat has-a Animal
-F. Beagle has-a Tail
+F. Beagle has-a Tail   True
 G. Beagle has-a Jumper
 
 Answer: B, C, F
-
 Explanation:
-
 Cat implements Jumper, so Cat is-a Jumper (B).
 Dog extends Animal, so Dog is-a Animal (C).
 Beagle extends Dog, and Dog has a Tail, so Beagle has-a Tail (F).
@@ -38,7 +32,6 @@ Dog does not implement Jumper, so Dog is-a Jumper is false.
 Beagle implements Jumper, but it does not have-a Jumper, so G is incorrect.
 
 3) What will be the output of the following Java program?
-
 public class Program1 
 {
     public static void main(String[] args) 
@@ -66,20 +59,17 @@ C. This is a run method My name is Sandip
 D. My name is Sandip This is a run method
 
 Answer: C or D (Output order is not guaranteed)
-
 Explanation:
-
 The program creates two threads, each printing a message.
 Since thread execution is non-deterministic, either output is possible.
 The lambda expression r2 is a valid functional interface implementation.
+
 4) What is the range of byte in Java?
 A. (-128 to 255)
 B. (-128 to 127)
 C. (0 to 255)
 D. (-256 to 255)
-
 Answer: B. (-128 to 127)
-
 Explanation:
 byte is an 8-bit signed data type in Java, so it can store values from -128 to 127.
 
@@ -90,11 +80,10 @@ C. Either checked or unchecked
 D. Runtime exceptions only
 
 Answer: A. Checked exceptions
-
 Explanation:
-
 If a user-defined exception extends Exception, it becomes a checked exception.
 If it extends RuntimeException, it becomes an unchecked exception.
+
 6) Which of the following is not a checked exception in Java?
 A. IOException
 B. SQLException
@@ -102,19 +91,16 @@ C. ArithmeticException
 D. FileNotFoundException
 
 Answer: C. ArithmeticException
-
 Explanation:
-
 Checked exceptions are those that must be handled explicitly (e.g., IOException, SQLException).
 ArithmeticException is an unchecked exception because it extends RuntimeException.
+
 7) What is the time complexity of Binary Search?
 A. O(n)
 B. O(n log n)
 C. O(log n)
 D. O(1)
-
 Answer: C. O(log n)
-
 Explanation:
 Binary search repeatedly divides the search space in half, making it logarithmic in time complexity.
 
@@ -125,7 +111,6 @@ C. Access
 D. finally
 
 Answer: C. Access
-
 Explanation:
 Java uses try, catch, finally, and throw for exception handling. Access is not related to exception handling.
 
@@ -136,7 +121,6 @@ C. Suzanne, Mathews, John Queue
 D. Compilation error
 
 Answer: A. Mathews, Suzanne, John Queue
-
 Explanation:
 The question refers to queue-based processing where FIFO (First-In-First-Out) order is maintained.
 
@@ -149,7 +133,7 @@ D. True
 Answer: A. f-p, w-f
 
 Explanation:
-The instanceof operator checks whether an object is an instance of a specific class or subclass.
+The instance of operator checks whether an object is an instance of a specific class or subclass.
 
 11) Where does the local Maven repository store dependencies?
 A. /usr/local/maven/repo
@@ -193,9 +177,9 @@ D. abstract, class
 Answer: C. final, interface
 
 Explanation:
-
 The final keyword prevents a class from being inherited.
 The interface keyword is used to define an interface in Java.
+
 12) Which of the following methods is used for instantiating objects of a class?
 A. newInstance()
 B. constructor
@@ -203,7 +187,6 @@ C. static method
 D. class.forName()
 
 Answer: B. constructor
-
 Explanation:
 A constructor is a special method in Java used to initialize objects when they are instantiated.
 
@@ -212,7 +195,6 @@ A. Static methods
 B. Instance methods
 C. Both A and B
 D. None of the above
-
 Answer: C. Both A and B
 
 Explanation:
@@ -225,8 +207,9 @@ C. Multithreading
 D. Polymorphism
 
 Answer: A. Serialization
-
 Explanation:
+Serialization is a mechanism of converting the state of an object into a byte stream.(Writing the Object) 
+Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory.(Reading the Object)
 The transient keyword prevents an instance variable from being serialized.
 
 15) By which of the following can we achieve synchronization?
@@ -236,11 +219,10 @@ C. Both A and B
 D. None of the above
 
 Answer: C. Both A and B
-
 Explanation:
-
 Synchronized methods ensure that only one thread can execute a method at a time.
 Synchronized blocks provide fine-grained control by synchronizing only a specific part of the method.
+
 16) What does Thread.isAlive() return when a thread has finished execution?
 A. true
 B. false
@@ -248,8 +230,8 @@ C. Throws an exception
 D. None of the above
 
 Answer: B. false
-
 Explanation:
+The isAlive() method in Java is used to check if a thread is still running or has finished its execution. It returns true if the thread is alive and false otherwise.
 isAlive() returns false once the thread has completed execution.
 
 17) In a banking system with multiple users accessing the same account, which concept should be used to prevent inconsistencies?
@@ -257,16 +239,11 @@ A. Thread synchronization
 B. Polymorphism
 C. Abstraction
 D. Recursion
-
 Answer: A. Thread synchronization
-
 Explanation:
 Thread synchronization ensures that multiple threads accessing the same resource do not create inconsistencies.
 
 18) In which line does the following code have an error when counting the number of elements in a LinkedList?
-java
-Copy
-Edit
 int count = 1;
 A. Line 1
 B. Line 2
@@ -274,7 +251,6 @@ C. Line 3
 D. Line 4
 
 Answer: A. Line 1
-
 Explanation:
 The count should typically be initialized as 0, not 1, when counting elements in a LinkedList.
 
@@ -285,7 +261,6 @@ C. 40, 4, 14
 D. None of the above
 
 Answer: A. 42, 3, 12
-
 Explanation:
 This is based on common math functions like Math.floor(), Math.ceil(), or Math.sqrt() applied to certain inputs.
 
@@ -296,7 +271,6 @@ C. The child exception is never caught
 D. The program works fine
 
 Answer: C. The child exception is never caught
-
 Explanation:
 If the parent exception is caught before the child exception, the child exception never gets executed, leading to unreachable code.
 
@@ -307,7 +281,6 @@ C. w
 D. o
 
 Answer: A. H
-
 Explanation:
 Files are read character by character, and "H" is the first character of "Hello world".
 
@@ -318,9 +291,8 @@ C. Map
 D. Queue
 
 Answer: B. Set
-
 Explanation:
-The Set interface does not allow duplicate values and ensures natural ordering if using TreeSet.
+The Set interface does not allow duplicate values and ensures natural ordering(any order) if using TreeSet.
 
 23) Which function is used to add elements to a Map in Java?
 A. add()
@@ -329,7 +301,6 @@ C. put()
 D. append()
 
 Answer: C. put()
-
 Explanation:
 The put() method is used to insert key-value pairs into a Map.
 
@@ -340,7 +311,6 @@ C. version, groupid, artifactid
 D. dependency, version
 
 Answer: C. version, groupid, artifactid
-
 Explanation:
 A dependency in a Maven pom.xml file is identified by groupId, artifactId, and version.
 
@@ -351,7 +321,6 @@ C. It compiles the project
 D. It deletes the pom.xml file
 
 Answer: B. It cleans up artifacts created by prior builds
-
 Explanation:
 The mvn clean command deletes temporary files and artifacts from previous builds, ensuring a fresh build environment.
 
@@ -362,7 +331,6 @@ C. Import
 D. Provided
 
 Answer: C. Import
-
 Explanation:
 The import scope is used in Maven when a dependency of type pom needs to be imported as a dependency management section.
 
@@ -373,7 +341,6 @@ C. maven-install-plugin
 D. maven-clean-plugin
 
 Answer: C. maven-install-plugin
-
 Explanation:
 The maven-install-plugin installs the built artifact into the local repository, allowing other projects to use it.
 
@@ -384,9 +351,8 @@ C. JVM will throw an error and abort the program
 D. The garbage collector will free up space and retry
 
 Answer: C. JVM will throw an error and abort the program
-
 Explanation:
-If the JVM runs out of memory, it throws an OutOfMemoryError, and the program terminates as this situation cannot be handled by normal programming techniques.
+If the JVM runs out of memory, it throws an OutOfMemoryError, and the program terminates as this situation cannot be handled by normal programming techniques
 
 29) What is an example of Boxing in Java?
 A. int x = 10;
@@ -395,7 +361,6 @@ C. Integer x = new Integer(10);
 D. x = 10 + 5;
 
 Answer: B. Integer x = Integer.valueOf(10);
-
 Explanation:
 Boxing refers to converting a primitive type into a corresponding wrapper object (int → Integer). Integer.valueOf(10) is the correct example.
 
@@ -406,20 +371,18 @@ C. A runtime exception is thrown
 D. None of the above
 
 Answer: C. A runtime exception is thrown
-
 Explanation:
+By default, sets in Java are mutable. This means that you can add, remove, and modify elements within the set. For example, the HashSet, TreeSet, and LinkedHashSet
 If the list is immutable or has a size constraint, calling add() can result in a RuntimeException.
 
 31) What exception is thrown in the following case?
 (Vanilla, Chocolate - Array processing question)
-
 A. NullPointerException
 B. IndexOutOfBoundsException
 C. ArrayStoreException
 D. ClassCastException
 
 Answer: B. ArrayIndexOutOfBoundsException
-
 Explanation:
 If an array is accessed beyond its valid index range, an ArrayIndexOutOfBoundsException occurs.
 
@@ -430,12 +393,12 @@ C. Beagle has a Tail
 D. Dog is a Jumper
 
 Answer: A, B, C
-
 Explanation:
-
 Cat implements Jumper, so it is-a Jumper.
 Dog extends Animal, so it is-a Animal.
 Beagle extends Dog and has a Tail reference, so it has-a Tail.
+
+
 33) What happens when executing List.set(0, "Data Structures")?
 A. "Data Structures" replaces the existing element at index 0
 B. Compilation error: Cannot convert from Object to boolean
@@ -443,24 +406,22 @@ C. Throws NullPointerException
 D. Throws IndexOutOfBoundsException
 
 Answer: B. Compilation error: Cannot convert from Object to boolean
-
 Explanation:
+List is immutable in JAVA , it has a size constraint
 This error occurs if the list expects a boolean return type or if the method signature is incorrect.
 
 34) What is the correct signature for compareTo in a class implementing Comparable?
-java
-Copy
-Edit
 public class Score implements Comparable() {  
-    public int compareTo(Score other) { /more code here/ }  
+    public int compareTo(Score other) { 
+/more code here/ }  
 }
+
 A. public void compareTo(Score other)
 B. public boolean compareTo(Score other)
 C. public int compareTo(Score other)
 D. public int compareTo(Object other)
 
 Answer: C. public int compareTo(Score other)
-
 Explanation:
 compareTo() must return an int value (0, positive, or negative) to indicate ordering.
 
@@ -471,14 +432,10 @@ C. LocalDate currentdate = LocalDate.now();
 D. Date currentdate = new Date();
 
 Answer: C. LocalDate currentdate = LocalDate.now();
-
 Explanation:
 LocalDate.now() returns the current date without needing a new keyword.
 
 36) What will be the output of the following code?
-java
-Copy
-Edit
 Thread t = new Thread();
 System.out.println(t.isAlive());
 A. true
@@ -487,9 +444,7 @@ C. Compilation error
 D. Runtime Exception
 
 Answer: B. false
-
-Explanation:
-Since t.start() was not called, isAlive() returns false.
+Explanation: When you create a new Thread object using Thread t = new Thread();, the thread is in the "New" state and has not yet been started. The isAlive() method returns true if the thread has been started and has not yet terminated. Since t.start() was not called, the thread remains in the "New" state, and isAlive() returns false.
 
 37) Which of the following methods are eligible for interfaces?
 A. boolean getAmount(boolean[] args)
@@ -501,7 +456,6 @@ E. void a()
 Answer: A, D, E
 
 Explanation:
-
 Valid:
 boolean getAmount(boolean[] args): Allowed as it follows standard interface rules.
 int a(): Valid as it declares a method without a body.
@@ -510,11 +464,16 @@ Invalid:
 public static void main(String[] args): Static methods cannot be abstract.
 public void main(String[] args): This is not a recognized method for interface
 
-
+Notes on Interfaces:
+Like abstract classes, interfaces cannot be used to create objects (in the example above, it is not possible to create an "Animal" object in the MyMainClass)
+Interface methods do not have a body - the body is provided by the "implement" class
+On implementation of an interface, you must override all of its methods
+Interface methods are by default abstract and public
+Interface attributes are by default public, static and final
+An interface cannot contain a constructor (as it cannot be used to create objects)
+====================================================================================================================
 38) What will be the output of the following code?
-java
-Copy
-Edit
+
 public static class Threads extends Thread {
     public static void main(String[] args) {
         Thread t = Thread.currentThread();
@@ -527,13 +486,12 @@ C. NullPointerException
 D. Thread[main, 1, main]
 
 Answer: A. Thread[main, 5, main]
-
 Explanation:
-
 Thread.currentThread() returns the currently executing thread (main thread).
 Default priority of the main thread is 5.
 Default group is main.
-The output is formatted as Thread[name, priority, group].
+IMP: The output is formatted as Thread[name, priority, group].
+
 39) Which method is required for loading a database driver in JDBC?
 A. DriverManager.loadDriver()
 B. Class.forName()
@@ -543,9 +501,9 @@ D. Both B & C
 Answer: D. Both Class.forName() and registerDriver()
 
 Explanation:
-
 Class.forName("com.mysql.cj.jdbc.Driver") dynamically loads the database driver.
 DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver()) manually registers the driver.
+
 40) Which of the following is used to limit the number of rows returned in JDBC?
 A. setFetchSize(int i)
 B. setMaxRows(int i)
@@ -553,21 +511,18 @@ C. setRowLimit(int i)
 D. setRowSize(int i)
 
 Answer: B. setMaxRows(int i)
-
 Explanation:
-
 setMaxRows(int i) limits the number of rows returned by a ResultSet.
+
 41) What is the return type of the hashCode() method in Java?
 A. String
 B. int
 C. long
 D. Object
-
 Answer: B. int
-
 Explanation:
-
 hashCode() returns a unique integer identifier for an object.
+
 42) What are Serializable and Cloneable in Java?
 A. Abstract classes
 B. Functional interfaces
@@ -575,10 +530,9 @@ C. Marker interfaces
 D. Exception classes
 
 Answer: C. Marker interfaces
-
 Explanation:
-
 Marker interfaces are empty interfaces that provide metadata to the compiler (e.g., Serializable, Cloneable).
+
 43) If a class has two or more base classes and one subclass, what is this called?
 A. Hierarchical Inheritance
 B. Single Inheritance
@@ -586,11 +540,10 @@ C. Multiple Inheritance
 D. Hybrid Inheritance
 
 Answer: C. Multiple Inheritance
-
 Explanation:
-
 Multiple inheritance means a class inherits from more than one base class.
 Java does not support multiple inheritance with classes, but it supports it using interfaces.
+
 44) What are in, out, and err in java.lang?
 A. Variables
 B. Classes
@@ -598,16 +551,13 @@ C. Static Fields
 D. Interfaces
 
 Answer: C. Static Fields
-
 Explanation:
-
+Static fields, also known as class variables, are variables declared with the static keyword in a class.
 System.in → Standard input stream (keyboard).
 System.out → Standard output stream (console).
 System.err → Standard error stream.
+
 45) What will be the output of the following code?
-java
-Copy
-Edit
 class X1 {
     int x = 9;
     public static void main(String[] args) {
@@ -622,11 +572,10 @@ C. Compilation Error
 D. NullPointerException
 
 Answer: A. 9
-
 Explanation:
-
 ob.x accesses the instance variable x, which is 9.
 The local x = 10 inside main does not override the instance variable.
+
 46) What is an immutable class in Java?
 A. A class with all variables declared as final
 B. A class that cannot be extended
@@ -634,10 +583,9 @@ C. A class whose state cannot be modified after creation
 D. A class that has static methods only
 
 Answer: C. A class whose state cannot be modified after creation
-
 Explanation:
-
 Immutable classes (e.g., String, Integer) cannot be modified after creation.
+
 47) What access modifiers can be used to access variables from other packages?
 A. private and protected
 B. protected and public
@@ -645,20 +593,18 @@ C. private and default
 D. default and protected
 
 Answer: B. protected and public
-
 Explanation:
-
 public → Accessible from anywhere.
 protected → Accessible in subclasses even if they are in different packages.
+
 48) Can constructors be overloaded in Java?
 A. Yes
 B. No
 
 Answer: A. Yes
-
 Explanation:
-
 Constructor overloading is possible when a class has multiple constructors with different parameters.
+
 49) If two threads have the same priority, which one will execute first?
 A. The first thread to be created
 B. The last thread to be created
@@ -666,11 +612,10 @@ C. The OS will decide
 D. It depends on the JVM
 
 Answer: C. The OS will decide
-
 Explanation:
-
 Thread scheduling depends on OS and JVM.
 Even if two threads have the same priority, their execution order is not guaranteed.
+
 50) What is the difference between ArrayList and Vector?
 A. ArrayList is thread-safe, Vector is not
 B. Vector is synchronized, ArrayList is not
@@ -678,9 +623,7 @@ C. Both are synchronized
 D. Vector is faster than ArrayList
 
 Answer: B. Vector is synchronized, ArrayList is not
-
 Explanation:
-
 ArrayList is not synchronized, making it faster.
 Vector is synchronized, making it thread-safe but slower.
 
@@ -689,11 +632,9 @@ A. Yes
 B. No
 
 Answer: A. Yes
-
 Explanation:
-
 StringBuffer is synchronized, making it thread-safe.
-StringBuilder is not thread-safe but faster.
+StringBuilder is not thread-safe(unsynchronised) but faster.
 
 52) What does collectionObject.stream() do?
 A. Converts a collection into a sequential stream
@@ -702,9 +643,7 @@ C. Converts a collection into a string
 D. None of the above
 
 Answer: A. Converts a collection into a sequential stream
-
 Explanation:
-
 stream() method is used to process elements in a collection using the Stream API.
 
 ===============================================================================================================================
@@ -714,7 +653,8 @@ b) git add remote <remote_repo_URL>
 c) git remote add origin <remote_repo_URL> ✅
 d) git link remote <remote_repo_URL>
 
-Explanation: The correct command to link a local repository to a remote repository is git remote add origin <remote_repo_URL>. This command establishes a connection between the local Git repository and the remote repository hosted on platforms like GitHub, GitLab, or Bitbucket.
+Explanation: The correct command to link a local repository to a remote repository is git remote add origin <remote_repo_URL>. 
+This command establishes a connection between the local Git repository and the remote repository hosted on platforms like GitHub, GitLab, or Bitbucket.
 
 2) Which programming language does not support Object-Oriented Programming (OOP) concepts?
 a) C++
@@ -729,7 +669,6 @@ a) CHAR
 b) VARCHAR
 c) TEXT ✅
 d) CHAR and VARCHAR
-
 Explanation: The TEXT data type can store the largest amount of data, up to 65,535 bytes. CHAR and VARCHAR have smaller limits, depending on their defined length. TEXT is used for large text-based data storage in databases.
 
 4) What is the correct order of Normalization?
@@ -737,7 +676,6 @@ a) 1NF, 3NF, 2NF, BCNF, 4NF, 5NF
 b) 1NF, 2NF, 3NF, BCNF, 4NF, 5NF ✅
 c) 1NF, BCNF, 2NF, 3NF, 5NF, 4NF
 d) 1NF, 2NF, BCNF, 3NF, 4NF, 5NF
-
 Explanation: The correct sequence of normalization is 1NF → 2NF → 3NF → BCNF → 4NF → 5NF. Each step eliminates different types of redundancies and anomalies to improve database structure.
 
 5) In which SDLC phase are both frontend and backend developers actively involved?
@@ -756,11 +694,11 @@ d) Extreme Prototyping
 e) All of the above ✅
 
 Explanation: There are four main types of prototype models:
-
 Throwaway/Rapid Prototypes – Quickly created to test ideas and then discarded.
 Evolutionary Prototypes – Continuously improved over time.
 Incremental Prototypes – Built in small parts and refined.
 Extreme Prototyping – Commonly used in web development with three phases (wireframes, coding, testing).
+
 7) In flowcharts, what symbol is used to indicate that the same process is connected or referenced on the same page?
 a) Off-Page Connector
 b) On-Page Connector ✅
@@ -805,6 +743,7 @@ A computer program consists of three fundamental structures:
 Sequence: Ordered statements executed in order.
 Selection: A condition-based execution (e.g., if-else statements).
 Iteration: Repeated execution of code using loops (e.g., for, while).
+
 12) What is the relationship of deptno in a database?
 a) Primary Key
 b) Foreign Key ✅
@@ -819,7 +758,6 @@ a) git revert <file>
 b) git reset HEAD <file> ✅
 c) git restore <file>
 d) git checkout <file>
-
 Explanation:
 The command git reset HEAD <file> removes a file from the staging area but keeps the changes in the working directory, allowing modifications to be committed later if needed.
 
@@ -828,7 +766,6 @@ a) A collection of tables
 b) A real-world object, person, or concept with stored data ✅
 c) A database constraint
 d) A function in SQL
-
 Explanation:
 An entity is a real-world object (like a person, place, or event) that is stored as a record in a database. Each entity has attributes (e.g., an "Employee" entity has attributes like name, ID, and department).
 
@@ -837,7 +774,6 @@ a) git create <repo_name>
 b) git init ✅
 c) git new <repo_name>
 d) git repository create
-
 Explanation:
 The git init command initializes a new empty Git repository. It creates a .git directory containing all metadata for version control.
 
@@ -846,7 +782,6 @@ a) A temporary storage area for commits
 b) A folder that stores metadata and object database for a project ✅
 c) A directory where user files are stored
 d) A staging area for uncommitted changes
-
 Explanation:
 The .git directory is a hidden folder that contains all essential Git data, including commit history, branches, remote information, and configuration settings.
 
@@ -855,7 +790,6 @@ a) Reusability
 b) Easy to debug
 c) Easy to test
 d) All of the above ✅
-
 Explanation:
 OOP provides benefits such as:
 
@@ -885,17 +819,10 @@ d) Finds the first non-null value in a column
 
 Explanation:
 The NVL function replaces NULL values with a specified default value. Example:
-
-sql
-Copy
-Edit
 SELECT NVL(salary, 0) FROM employees;
 This replaces NULL salaries with 0.
 
 20) Which SQL query correctly uses SELECT, WHERE, ORDER BY, and aliasing?
-sql
-Copy
-Edit
 SELECT customer_id AS id,
        CONCAT(first_name, ' ', last_name) AS full_name,
        email, order_date, total_amount 
@@ -903,15 +830,11 @@ FROM orders
 WHERE order_status = 'completed'
 ORDER BY order_date DESC;
 ✅
-
-Explanation:
+Explanationn
 This query:
-
 Uses AS for aliasing (customer_id AS id, CONCAT(...) AS full_name)
 Filters data using WHERE (order_status = 'completed')
 Orders results with ORDER BY (order_date DESC for latest first)
-
-
 
 21) What is the relationship between a University and all the Colleges in the region?
 a) 1:1
@@ -927,7 +850,6 @@ a) Fixing bugs in the software
 b) Enhancing performance based on user feedback
 c) Modifying software to keep it usable in a changing environment ✅
 d) Completely redesigning the software
-
 Explanation:
 Adaptive Maintenance modifies software to adapt to new business requirements, laws, or technological advancements, ensuring continued usability.
 
@@ -936,7 +858,6 @@ a) Creating a final version of the software
 b) Developing an incomplete version to visualize and refine requirements ✅
 c) Directly coding without planning
 d) A replacement for the Waterfall model
-
 Explanation:
 The Prototyping Model helps visualize the system, refine functionalities, and gather user feedback early before the final system is built.
 
@@ -945,13 +866,9 @@ a) SHOW COLLATION;
 b) SHOW CHARSET;
 c) SHOW CHARACTER SET; ✅
 d) SHOW ENCODING;
-
 Explanation:
 To view all character sets supported by MySQL, use:
 
-sql
-Copy
-Edit
 SHOW CHARACTER SET;
 This command lists character sets along with their default collations.
 
@@ -960,14 +877,13 @@ a) Using non-aggregated columns in SELECT
 b) Using ambiguous columns
 c) HAVING without GROUP BY
 d) All of the above ✅
-
 Explanation:
 Illegal GROUP BY queries include:
-
 Selecting non-aggregated columns without grouping.
 Using ambiguous columns that belong to multiple tables.
 Writing HAVING without GROUP BY.
 Inconsistent data types in the grouping.
+
 26) What is staging in Git?
 a) A permanent storage for changes
 b) A way to prepare and review changes before committing ✅
@@ -976,10 +892,6 @@ d) A method to delete untracked files
 
 Explanation:
 Staging allows selective inclusion of changes before committing. The command:
-
-bash
-Copy
-Edit
 git add <file>
 moves files to the staging area, where they can be reviewed before committing.
 
@@ -1045,11 +957,8 @@ d) Merges two repositories
 
 Explanation:
 The git clone command copies a remote repository to a local machine:
-
-bash
-Copy
-Edit
 git clone <repository_URL>
+
 34) What does git commit do?
 a) Saves changes permanently to the repository ✅
 b) Pushes changes to a remote repository
@@ -1058,11 +967,8 @@ d) Deletes branches
 
 Explanation:
 The git commit command records staged changes in the local repository:
-
-bash
-Copy
-Edit
 git commit -m "Commit message"
+
 35) What does git reset do?
 a) Discards commits and resets the working directory ✅
 b) Moves the HEAD pointer to a different commit
@@ -1071,11 +977,8 @@ d) Creates a new branch
 
 Explanation:
 The git reset command modifies the commit history by unstaging or removing commits. Example:
-
-bash
-Copy
-Edit
 git reset HEAD~1  # Undo the last commit
+
 36) What does git commit "branch1..branch2" do?
 a) Commits all changes in branch1 and branch2
 b) Creates a commit with changes between two branches ✅
@@ -1093,29 +996,17 @@ d) Switches branches
 
 Explanation:
 The command:
-
-bash
-Copy
-Edit
 git config user.name
 displays the current username set in Git's configuration. To set a username globally, use:
-
-bash
-Copy
-Edit
 git config --global user.name "Your Name"
+
 37) What does the GROUP BY clause do in SQL?
 a) Filters rows based on conditions
 b) Groups rows with the same values in a specified column ✅
 c) Orders rows in ascending or descending order
 d) Removes duplicate records
-
 Explanation:
 The GROUP BY statement groups records with similar values in one or more columns. It is commonly used with aggregate functions like COUNT(), SUM(), and AVG().
-
-sql
-Copy
-Edit
 SELECT class, COUNT(student_id) 
 FROM students 
 GROUP BY class;
@@ -1130,10 +1021,6 @@ d) Updates 3 specific rows
 Explanation:
 LIMIT restricts the number of rows returned by a query.
 Example:
-
-sql
-Copy
-Edit
 SELECT * FROM employees LIMIT 3;
 This retrieves only the first 3 rows.
 
@@ -1146,10 +1033,6 @@ d) Returns all rows from both tables
 Explanation:
 A LEFT JOIN returns all records from the left table and matching records from the right table. If no match is found, NULL values are returned for the right table.
 Example:
-
-sql
-Copy
-Edit
 SELECT employees.name, departments.department_name 
 FROM employees 
 LEFT JOIN departments ON employees.department_id = departments.id;
@@ -1164,9 +1047,6 @@ d) Using WHERE column_name == NULL
 Explanation:
 NULL values in SQL must be checked using IS NULL:
 
-sql
-Copy
-Edit
 SELECT * FROM employees WHERE salary IS NULL;
 To find non-null values, use IS NOT NULL.
 
@@ -1179,10 +1059,6 @@ d) Deletes duplicate rows from the database
 Explanation:
 DISTINCT removes duplicate values from query results.
 Example:
-
-sql
-Copy
-Edit
 SELECT DISTINCT department FROM employees;
 This retrieves unique department names.
 
@@ -1194,11 +1070,8 @@ d) WHERE salary IN (40K, 100K)
 
 Explanation:
 The BETWEEN operator retrieves values within a range, including both endpoints:
-
-sql
-Copy
-Edit
 SELECT * FROM employees WHERE salary BETWEEN 40000 AND 100000;
+
 43) How many days does it take for Git to automatically delete history?
 a) 30 days
 b) 90 days
@@ -1207,13 +1080,10 @@ d) Git does not automatically delete history ✅
 
 Explanation:
 Git does not delete history automatically. To manually remove history, you need to:
-
 Rewrite history (git rebase or git filter-branch)
 Prune unreachable objects (git gc --prune=now)
+
 44) What happens when you run the following SQL query?
-sql
-Copy
-Edit
 DELETE FROM employees WHERE id IN (100, 101, 105);
 a) Deletes only the first matching record
 b) Deletes all records where id is 100, 101, or 105 ✅
@@ -1231,19 +1101,11 @@ d) CREATE variable_name TYPE
 
 Explanation:
 In SQL Server, variables are declared using DECLARE:
-
-sql
-Copy
-Edit
 DECLARE @salary INT;
 SET @salary = 50000;
+
 In MySQL, use SET:
-
-sql
-Copy
-Edit
 SET @salary = 50000;
-
 ==================================================================================================================================
 
 Here are multiple-choice questions (MCQs) based on the provided SQL concepts, including answers and explanations:
@@ -1261,7 +1123,6 @@ C) ALL
 D) SOME
 
 Answer: C) ALL
-
 Explanation: The ALL operator returns TRUE if all values returned by the subquery satisfy the condition. It ensures that the condition holds for every single value in the subquery result.
 
 
@@ -1270,7 +1131,6 @@ Explanation: The ALL operator returns TRUE if all values returned by the subquer
 MCQ 2
 
 What will the following SQL query return?
-
 SELECT * FROM mphasisemp 
 WHERE salary < ALL (SELECT AVG(salary) FROM mphasisemp);
 
@@ -1280,40 +1140,33 @@ C) Employees whose salary is equal to the average salary
 D) All employees in the table
 
 Answer: A) Employees whose salary is less than the average salary
-
 Explanation: The ALL operator ensures that all values in the subquery result satisfy the condition. Here, the condition salary < ALL (SELECT AVG(salary) FROM mphasisemp) means selecting employees with salaries strictly less than the average salary.
 
 
 ---
 
 MCQ 3
-
 Which SQL query finds all employees whose salary is more than the average salary of all employees?
 
 A)
-
 SELECT * FROM mphasisemp 
 WHERE salary < (SELECT AVG(salary) FROM mphasisemp);
 
 B)
-
 WITH temporaryTable(averageValue) AS 
 (SELECT AVG(salary) FROM mphasisemp) 
 SELECT empid, name, salary FROM mphasisemp, temporaryTable 
 WHERE mphasisemp.salary > temporaryTable.averageValue;
 
 C)
-
 SELECT * FROM mphasisemp 
 WHERE salary = (SELECT AVG(salary) FROM mphasisemp);
 
 D)
-
 SELECT * FROM mphasisemp 
 WHERE salary < ALL (SELECT AVG(salary) FROM mphasisemp);
 
 Answer: B)
-
 Explanation: The WITH clause creates a temporary table that stores the average salary value. Then, it retrieves all employees whose salary is greater than this computed value.
 
 
@@ -1329,7 +1182,6 @@ C) SOME
 D) EXISTS
 
 Answer: B) ANY
-
 Explanation: The ANY operator returns TRUE if at least one value from the subquery meets the condition. It is useful when checking if a value is greater than or less than any of the values in a subquery.
 
 
@@ -1338,14 +1190,12 @@ Explanation: The ANY operator returns TRUE if at least one value from the subque
 MCQ 5
 
 What is the difference between ANY and SOME in SQL?
-
 A) ANY works only with numerical values, while SOME works with text values.
 B) ANY and SOME are identical and can be used interchangeably.
 C) ANY returns TRUE only if all values in the subquery meet the condition, whereas SOME checks for at least one.
 D) SOME is more optimized than ANY for performance reasons.
 
 Answer: B) ANY and SOME are identical and can be used interchangeably.
-
 Explanation: Both ANY and SOME function the same way in SQL and can be used interchangeably. They return TRUE if at least one value in the subquery meets the given condition.
 
 
@@ -1375,7 +1225,6 @@ Here are multiple-choice questions (MCQs) with answers and explanations based on
 ---
 
 1) Which Normal Form ensures that all columns/attributes should have a single (atomic) value?
-
 a) 1NF
 b) 2NF
 c) 3NF
@@ -1423,7 +1272,6 @@ Explanation: NULL in SQL represents missing or unknown values. It is different f
 ---
 
 5) What is an entity in database design?
-
 a) Object
 b) Table
 c) Relationship
@@ -1431,23 +1279,19 @@ d) Constraint
 Answer: a) Object
 Explanation: An entity represents a real-world object (e.g., a student, car, or employee) that can have attributes.
 
-
 ---
 
 6) If entity A is associated with all entities in B, then the relationship type can be:
+a) 1:M b) M:1 c) M:M d) 1:1
+Given that entity A is associated with all entities in B, the relationship type is 1:M (one-to-many).
 
-a) 1:M
-b) M:1
-c) M:M
-d) 1:1
-Answer: c) M:M
-Explanation: A many-to-many (M:M) relationship exists when multiple records in one entity are related to multiple records in another entity.
+This means that a single instance of entity A is related to multiple instances of entity B.
+
+For example, think of a teacher (entity A) who teaches multiple students (entities in B). One teacher can have many students, but each student has only one teacher in this scenario.
 
 
 ---
-
 7) Types of entities in a database are:
-
 a) Weak and Strong
 b) Dependent and Independent
 c) Primary and Foreign
@@ -1455,11 +1299,8 @@ d) None of the above
 Answer: b) Dependent and Independent
 Explanation: Entities can be independent (exist on their own) or dependent (require another entity for existence, like a weak entity).
 
-
 ---
-
 8) SQL Server supports:
-
 a) Database design
 b) Analysis
 c) Reporting
@@ -1471,7 +1312,6 @@ Explanation: SQL Server provides tools for database design, analysis, and report
 ---
 
 9) Components of SQL Server include:
-
 a) Reporting
 b) Design
 c) Analysis
@@ -1493,7 +1333,6 @@ Explanation: In OOP, relationships between objects are typically one-to-one or o
 ---
 
 11) What will the following SQL statement do?
-
 SELECT MIN(DOB), MAX(DOB) FROM mphasisemp;
 
 a) Find the oldest and youngest employees
@@ -1537,7 +1376,7 @@ b) Data Manipulation Language (DML)
 c) Data Definition Language (DDL)
 d) Data Control Language (DCL)
 Answer: c) Data Definition Language (DDL)
-Explanation: DDL commands (CREATE, ALTER, DROP) define and modify database structures.
+Explanation: DDL commands (CREATE, ALTER, DROP, TRUNCATE) define and modify database structures.
 
 
 ---
@@ -1598,7 +1437,6 @@ Explanation: UPDATE is a Data Manipulation Language (DML) command, not a Data De
 ---
 
 4) Which command is used to select only one copy of each set of duplicate rows?
-
 a) SELECT UNIQUE
 b) SELECT DISTINCT
 c) SELECT DIFFERENT
@@ -1820,9 +1658,6 @@ d) Delete a table
 Answer: a) Change the table structure
 Explanation: The ALTER TABLE statement modifies an existing table’s structure by adding, modifying, or deleting columns.
 
-
----
-
 3) What SQL command can be used to delete columns from a table?
 
 a) DELETE COLUMN
@@ -1832,9 +1667,6 @@ d) DROP COLUMN
 Answer: c) ALTER TABLE TableName DROP COLUMN ColumnName
 Explanation: The ALTER TABLE ... DROP COLUMN command removes a specific column from an existing table.
 
-
----
-
 4) What SQL command can be used to add columns to a table?
 
 a) ALTER TABLE TableName ADD ColumnName
@@ -1843,9 +1675,6 @@ c) ADD COLUMN ColumnName
 d) MODIFY TABLE ADD ColumnName
 Answer: a) ALTER TABLE TableName ADD ColumnName
 Explanation: The ALTER TABLE ... ADD COLUMN command adds a new column to an existing table.
-
-
----
 
 5) The command to remove rows from a table 'CUSTOMER' is:
 
@@ -2170,18 +1999,13 @@ B) The finally block is executed only if an exception is thrown.
 C) The catch block must follow the finally block.
 
 D) The catch block must handle IOException before handling Exception.
-
 Answer: D) The catch block must handle IOException before handling Exception Explanation: In Java, catch blocks for subtypes of Exception must be placed before the catch block for Exception to prevent compilation errors.
 
 Question 10
-A property which is not true for classes is that they:
-
+A property which is not true for classes is that they:-
 A) Can be instantiated
-
 B) Can have methods
-
 C) Can implement multiple interfaces
-
 D) Can inherit from multiple classes
 
 Answer: D) Can inherit from multiple classes Explanation: In Java, a class cannot inherit from multiple classes (no multiple inheritance).
