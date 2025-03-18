@@ -1,0 +1,32 @@
+Typescript
+---------------------
+This was developed by Facebook. Our browser does not support typescript so we have to convert it into JavaScript.
+The extension for typescript is .ts. where as the extension for JavaScript is .js.
+We have to compile the typescript and after compilation .ts is converted into .js .
+AngularJS use typescript as a scripting language. 
+data type of Typescript is let. where as the datatype of JavaScript is var.
+--------------------
+example1.ts
+--------------------
+console.log("Welcome to typescript");
+console.log("At Mphasis");
+----------------------------
+USED FOR Installing the Compiler
+The compiler is installed in the node_modules directory and can be run with: npx tsc.[NPX ---> node package manager ]
+
+step 1:- npm install typescript
+             npm install -g typescript
+--------------------------------------------------------------------------------------
+step 2:-
+to compile :-npx tsc example1.ts
+after compilation example1.js will be automatically created.
+--------------------------------------------------------------------------------------
+step 3:-
+to run :- node example1.js
+==========================================
+------------------------------------------------------------------------------------------------
+step 1:- npm install -g typescript@latest
+step 2:-notepad example1.ts
+step 3:-compile ---->  npx tsc example1.ts
+step 4:-to run ---->      node example1.js
+-----------------------------------------------------------------------------
